@@ -1,0 +1,5 @@
+.shopContainer {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(calc(25% - 1rem), 1fr));
+}   

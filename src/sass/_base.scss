@@ -1,0 +1,55 @@
+:root {
+    --font-body: 'Raleway', sans-serif;
+    --font-heading: 'Exo', sans-serif;
+
+    --color-primary: hsl(228, 93%, 49%);
+    --color-blue: hsl(202, 100%, 36%);
+    --color-danger: hsl(351, 93%, 49%);
+    --color-warning: hsl(12, 93%, 49%);
+    --color-success: hsl(161, 93%, 40%);
+    --color-light: #FBF8FF;
+    --color-dark: #1D1A27;
+    --color-grey: #AEA9BA;
+    --color-grey-dark: #797585;
+    --color-smooth: #F6EBFF;
+
+    --shadow-xs: 1px 1px 4px rgba(0,0,0,.1);
+    --shadow-sm: 0 2px 4px rgba(0,0,0,.15);
+    --shadow-md: 0 2px 4px rgba(0,0,0, .20);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    font-family: unset;
+    font-size: .625em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+body {
+    box-sizing: inherit;
+    font-weight: 400;
+    font-variant-numeric: lining-nums;
+    letter-spacing: normal;
+    text-transform: initial;
+    font-family: var(--font-body);
+    letter-spacing: .01em;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    color: var(--color-dark);
+}
+

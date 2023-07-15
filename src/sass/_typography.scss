@@ -1,0 +1,126 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    letter-spacing: 0;
+    &--lg {
+        font-size: 4.2rem;
+    }
+    &--md {
+        font-size: 3.2rem;
+    }
+    &--sm {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: none;
+    }
+    &--xs {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: none;
+    }
+}
+
+.color {
+
+    &--primary {
+        color: var(--color-primary);
+        fill: var(--color-primary)
+    }
+    &--blue {
+        color: var(--color-blue);
+        fill: var(--color-blue);
+    }
+    &--danger {
+        color: var(--color-danger);
+        fill: var(--color-danger);
+    }
+    &--warning {
+        color: var(--color-warning);
+        fill: var(--color-warning)
+    }
+    &--success {
+        color: var(--color-success);
+        fill: var(--color-sucess)
+    }
+    &--light {
+        color: var(--color-light);
+        fill: var(--color-light)
+    }
+    &--dark {
+        color: var(--color-dark);
+        fill: var(--color-dark)
+    }
+    &--grey {
+        color: var(--color-grey);
+        fill: var(--color-grey)
+    }
+    &--grey-2 {
+        color: var(--color-grey-dark);
+        fill: var(--color-grey-dark);
+    }
+    &--smooth {
+        color: var(--color-smooth);
+        fill: var(--color-smooth)
+    }
+}
+
+.bg {
+
+    &--primary {
+        background-color: var(--color-primary);
+    }
+    &--blue {
+        background-color: var(--color-blue);
+    }
+    &--danger {
+        background-color: var(--color-danger);
+    }
+    &--warning {
+        background-color: var(--color-warning);
+    }
+    &--success {
+        background-color: var(--color-success);
+    }
+    &--light {
+        background-color: var(--color-light);
+    }
+    &--dark {
+        background-color: var(--color-dark);
+    }
+    &--grey {
+        background-color: var(--color-grey);
+    }
+    &--grey-2 {
+        background-color: var(--color-grey-dark);
+    }
+    &--smooth {
+        background-color: var(--color-smooth);
+    }
+}
+
+.nav-link {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    transform: color .2s ease;
+    text-transform: uppercase;
+    &:hover {
+        color: var(--color-grey-dark);
+    }
+}
