@@ -1,0 +1,3 @@
+export const COLLECTION_ACTION_TYPES = {
+    SET_COLLECTION:  'shopCollection/SET_COLLECTION'
+}

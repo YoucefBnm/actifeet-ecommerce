@@ -1,6 +1,9 @@
+import { useState } from 'react'
+import { motion, LayoutGroup } from 'framer-motion'
+import { fadeEffect } from '../../utils/motion/motion.utils'
 import './ProductCard.scss'
 
-const ProductCard = () => {
+const ProductCard = ({ product }) => {
     const { gender, category, brand, name, price, badges, discount, colors } = product
 
     const [activeColor, setActiveColor] = useState(0)

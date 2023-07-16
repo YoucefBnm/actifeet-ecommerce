@@ -1,78 +1,91 @@
 export const ALL_PRODUCTS = [
     {
-        id: 60,
+        id: 66,
         gender: 'women',
         category: 'running',
         brand: 'brooks',
-        name: "",
-        price: 185.25,
-        badges: ['new'],
+        name: "Brooks Women’s Launch 10 Neutral Running Shoe",
+        price: 158.84,
+        badges: ['best seller'],
         colors: [
             {
-                id: '60a',
-                color: 'midnightblue',
-                images: [
-                    'https://m.media-amazon.com/images/I/81QDhUZ8LdL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81caeKAttiL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/813F8sAomAL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/817BIdPs0IL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81dvRb5OSpL._AC_UY695_.jpg',
-                ]
-            },
-            {
-                id: '60b',
+                id: '66a',
                 color: 'black',
                 images: [
-                    'https://m.media-amazon.com/images/I/81yjAuT14dL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81C-b2VW9sL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81Ep4Fn4iDL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/813w39dDv9L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81rNcqmM4jL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/819Y7ODBNdL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81By-nBEVJL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81odJIQV8kL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81VZLVN5d3L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81+ZlaxoDcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71IowKj-EpL._AC_UY695_.jpg',
                 ]
             },
             {
-                id: '60c',
-                color: 'lightblue',
+                id: '66b',
+                color: 'dodgerblue',
                 images: [
-                    'https://m.media-amazon.com/images/I/81mN9iblYoL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81x3bk05S+L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81G2Rosn9vL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81MotLjwE4L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81KKN1Qf48L._AC_SY695._SX._UX._SY._UY_.jpg',
-                ]
-            },
-            {
-                id: '60d',
-                color: 'mediumaquamarine',
-                images: [
-                    'https://m.media-amazon.com/images/I/81s+7X0r3RL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/813yFjCCQoL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/91xtYeBctlL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81rrrzp0RLL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81O+siCqqQL._AC_SY695._SX._UX._SY._UY_.jpg',
-                ]
-            },
-            {
-                id: '60f',
-                color: 'dimgrey',
-                images: [
-                    'https://m.media-amazon.com/images/I/81zbqqJqobL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81Wn9uyrgfL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81jzGzCsLbL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81bKgiwaJSL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/91EWjrCbd5L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81S7zBJ8r2L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/914FtfKIV0L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81dRS5nYJXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81lIyr7F3oL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81JUYho-xmL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71UB4Pw7s-L._AC_SY695._SX._UX._SY._UY_.jpg',
                 ]
             },
         ],
-        sizes: [5,5.5,6,6.5,7.5,8,8.5,9],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5],
         details: [
-            "Imported",
-            "THIS WOMEN'S SHOE IS FOR: Runners looking for a smooth ride that won’t distract from the fun of the run. The Ghost 14 offers a simplified midsole construction which creates more seamless transitions. This Brooks Ghost 14 is a certified PDAC A5500 Diabetic shoe and has been granted the APMA Seal of Acceptance. We recommend ordering Brooks running shoes 1/2 to one size larger than your dress shoe.",
-            "SUPPORT AND CUSHION: The Ghost 14 offers neutral support while providing high energizing cushioning. Ideal for road running, cross training, the gym or wherever you might want to take them! Predecessor: Ghost 13",
-            "BALANCED, SOFT CUSHIONING: BioMoGo DNA and DNA LOFT cushioning work together to provide a just-right softness underfoot without losing responsiveness and durability - yet it feels lighter than ever. DNA LOFT now makes up the entire midsole, for a softer, smoother, ride.",
-            "SMOOTH, STABLE RIDE: No matter how your foot lands, our Segmented Crash Pad - an integrated system of shock absorbers - will cushion every step and stride for smooth heel-to-toe transitions.",
-            "SOFT, SECURE, FIT: More strategic use of the 3D Fit Print upper technology provides structure that moves with the foot.",
-
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "THIS WOMEN’S SHOE IS FOR: The Launch 10 is for runners who need a shoe that will offer dependable speed for all types of workouts and even races.",
+            "QUICK, SMOOTH TRANSITIONS: Our outsole is shaped to encourage transitions from heel to toe for an efficient toe-off.",
+            "SOFT, LIGHTWEIGHT CUSHIONING: Lightweight DNA cushioning is soft and responsive and adapts to each runner’s unique weight and stride for a fast experience.",
+            "PERFORMANCE FIT: An updated upper to deliver a locked-down fit that will hold your foot securely in place during fast workouts and races.",
+            "BREATHABLE UPPER: New engineered warp knit upper provides targeted breathability."
+        ]
+    },
+    {
+        id: 2,
+        gender: 'men',
+        category: 'cross training',
+        brand: 'reebok',
+        name: "Reebok Men's Floatride Energy Symmetros",
+        price: 91.48,
+        badges: ['sale','best seller'],
+        discount: 20,
+        colors: [
+            {
+                id: '2a',
+                color: 'lightgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61shnhi52-S._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61dmClrnQrS._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Go9QWQpoS._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71gXZdV6SgS._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Avu0P5ikS._AC_SY695._SX._UX._SY._UY_.jpg'
+                ],
+            },
+            {
+                id: '2b',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71NTQtcsP4L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71W48Kah+sL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71FZdd+kKSL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/717w1z8YJDL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/816CNcJxUHL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ],
+            }
+        ],
+        sizes: [8.5,9,9.5,10,11,12],
+        details: [
+            "Synthetic-and-mesh",
+            "Rubber sole",
+            "Breathable engineered mesh upper for support",
+            "Designed for: Running",
+            "Soft, breathable feel",
+            "3D moulded heel counter for a locked-in fit, carbon rubber outsole for targeted traction and durability",
+            "Floatride Energy Foam provides lightweight, responsive cushioning",
         ]
     },
     {
@@ -180,47 +193,79 @@ export const ALL_PRODUCTS = [
        ]
     },
     {
-        id: 2,
-        gender: 'men',
-        category: 'cross training',
-        brand: 'reebok',
-        name: "Reebok Men's Floatride Energy Symmetros",
-        price: 91.48,
-        badges: ['sale','best seller'],
-        discount: 20,
+        id: 60,
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: "brooks women running",
+        price: 185.25,
+        badges: ['new'],
         colors: [
             {
-                id: '2a',
-                color: 'lightgrey',
+                id: '60a',
+                color: 'midnightblue',
                 images: [
-                    'https://m.media-amazon.com/images/I/61shnhi52-S._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/61dmClrnQrS._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/61Go9QWQpoS._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71gXZdV6SgS._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/61Avu0P5ikS._AC_SY695._SX._UX._SY._UY_.jpg'
-                ],
+                    'https://m.media-amazon.com/images/I/81QDhUZ8LdL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81caeKAttiL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/813F8sAomAL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/817BIdPs0IL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81dvRb5OSpL._AC_UY695_.jpg',
+                ]
             },
             {
-                id: '2b',
+                id: '60b',
                 color: 'black',
                 images: [
-                    'https://m.media-amazon.com/images/I/71NTQtcsP4L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71W48Kah+sL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71FZdd+kKSL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/717w1z8YJDL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/816CNcJxUHL._AC_SY695._SX._UX._SY._UY_.jpg'
-                ],
-            }
+                    'https://m.media-amazon.com/images/I/81yjAuT14dL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81C-b2VW9sL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81Ep4Fn4iDL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/813w39dDv9L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81rNcqmM4jL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '60c',
+                color: 'lightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/81mN9iblYoL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81x3bk05S+L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81G2Rosn9vL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81MotLjwE4L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81KKN1Qf48L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '60d',
+                color: 'mediumaquamarine',
+                images: [
+                    'https://m.media-amazon.com/images/I/81s+7X0r3RL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/813yFjCCQoL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91xtYeBctlL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81rrrzp0RLL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81O+siCqqQL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '60f',
+                color: 'dimgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/81zbqqJqobL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81Wn9uyrgfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81jzGzCsLbL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81bKgiwaJSL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91EWjrCbd5L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
         ],
-        sizes: [8.5,9,9.5,10,11,12],
+        sizes: [5,5.5,6,6.5,7.5,8,8.5,9],
         details: [
-            "Synthetic-and-mesh",
-            "Rubber sole",
-            "Breathable engineered mesh upper for support",
-            "Designed for: Running",
-            "Soft, breathable feel",
-            "3D moulded heel counter for a locked-in fit, carbon rubber outsole for targeted traction and durability",
-            "Floatride Energy Foam provides lightweight, responsive cushioning",
+            "Imported",
+            "THIS WOMEN'S SHOE IS FOR: Runners looking for a smooth ride that won’t distract from the fun of the run. The Ghost 14 offers a simplified midsole construction which creates more seamless transitions. This Brooks Ghost 14 is a certified PDAC A5500 Diabetic shoe and has been granted the APMA Seal of Acceptance. We recommend ordering Brooks running shoes 1/2 to one size larger than your dress shoe.",
+            "SUPPORT AND CUSHION: The Ghost 14 offers neutral support while providing high energizing cushioning. Ideal for road running, cross training, the gym or wherever you might want to take them! Predecessor: Ghost 13",
+            "BALANCED, SOFT CUSHIONING: BioMoGo DNA and DNA LOFT cushioning work together to provide a just-right softness underfoot without losing responsiveness and durability - yet it feels lighter than ever. DNA LOFT now makes up the entire midsole, for a softer, smoother, ride.",
+            "SMOOTH, STABLE RIDE: No matter how your foot lands, our Segmented Crash Pad - an integrated system of shock absorbers - will cushion every step and stride for smooth heel-to-toe transitions.",
+            "SOFT, SECURE, FIT: More strategic use of the 3D Fit Print upper technology provides structure that moves with the foot.",
+
         ]
     },
     {
@@ -560,7 +605,7 @@ export const ALL_PRODUCTS = [
         colors: [
             {
                 id: '8a',
-                color: '',
+                color: 'white',
                 images: [
                     'https://m.media-amazon.com/images/I/51wuCvp+m9L._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/51kYlPPJfOL._AC_UX695_.jpg'
@@ -916,7 +961,7 @@ export const ALL_PRODUCTS = [
         colors: [
             {
                 id: '17a',
-                color: '',
+                color: 'lightblue',
                 images: [
                     'https://m.media-amazon.com/images/I/81t+VEUamZL._AC_SX695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/91oMdzw20gL._AC_SX695._SX._UX._SY._UY_.jpg',
@@ -924,7 +969,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/613tHWPRqwL._AC_SX695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/618OvT8u-EL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/71PlVv+SY0L._AC_SX695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             },
             {
@@ -1127,7 +1171,7 @@ export const ALL_PRODUCTS = [
         colors: [
             {
                 id: '22a',
-                color: '',
+                color: 'black',
                 images: [
                     'https://m.media-amazon.com/images/I/714VXXWjr0L._AC_UX695_.jpg',
                     'https://m.media-amazon.com/images/I/71EAvBSna3L._AC_UX695_.jpg',
@@ -1470,87 +1514,64 @@ export const ALL_PRODUCTS = [
             "Responsive UA HOVR cushioning reduces impact, returns energy & helps propel you forward UA Tribase maximizes ground contact, promotes natural motion & provides flexibility to grip during lifts Upper is extremely comfortable & durable, while providing stability & containment where you need it",
             "Unique lacing structure for a locked-in fit & feel Knit bootie design gives you a locked-in but comfortable fit External heel counter combined with stability chassis creates the ultimate in stable support Full rubber outsole for elevated traction & durability",
             "Style #: 3023005",
-
         ]
     },
     {
         id: 30,
-        gender: 'kids',
+        gender: 'women',
         category: 'climbing',
         brand: 'evolv',
-        name: "Evolv Venga Climbing Shoe - Kid's",
-        price: 99,
-        badges: ['sale'],
-        discount: 15,
+        name: "Evolv Kira Climbing Shoes - Women's",
+        price: 178,
         colors: [
             {
                 id: '30a',
-                color: 'deepskyblue',
+                color: 'turquoise',
                 images: [
-                   'https://m.media-amazon.com/images/I/71m-s1E1nrL._AC_UX695_.jpg',
-                   'https://m.media-amazon.com/images/I/71l5fW23rML._AC_UX695_.jpg',
-                   'https://m.media-amazon.com/images/I/71eM-7zMlSL._AC_UX695_.jpg',
-                   'https://m.media-amazon.com/images/I/71fIAMgPBOL._AC_UY695_.jpg',
-                   'https://m.media-amazon.com/images/I/715E9gDd+NL._AC_UY695_.jpg',
-                   'https://m.media-amazon.com/images/I/71zHsavXS5L._AC_UX695_.jpg',
-                   'https://m.media-amazon.com/images/I/61zvgwUcuBL._AC_UX695_.jpg'
+                   'https://m.media-amazon.com/images/I/61zUR2NDdyL._AC_UY695_.jpg',
+                   'https://m.media-amazon.com/images/I/71oMzGDq5LL._AC_UY695_.jpg',
+                   'https://m.media-amazon.com/images/I/61VvK1pXWML._AC_UY695_.jpg',
+                   'https://m.media-amazon.com/images/I/61CncQFpI3L._AC_UY695_.jpg',
+                   'https://m.media-amazon.com/images/I/61zOEJ5qAmL._AC_UY695_.jpg',
+                   'https://m.media-amazon.com/images/I/71T0p7Ji1NL._AC_UY695_.jpg',
                 ]
             },
         ],
-        sizes: [1,2,3,4,5],
+        sizes: [5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11],
         details: [
             "Rubber sole",
-            "VEGAN FRIENDLY SYNTHETIC - Breathable Polyester Mesh Upper.",
-            "SINGLE PULL ADJUSTABLE STRAP SYSTEM - Provides comfortable adjustment of length and volume of shoe.",
-            "FULL LENGTH MIDSOLE & OUTSOLE - For maximum support and comfort. TRAX SAS RUBBER - Best friction plus maximum durability.",
-            "MOLDED VTR - Evolv's Variable Thickness Rand (VTR) system puts thinner rand rubber in areas to reduce pressure points and hot spots around the foot as well as thicker rubber for increased longevity in the high wear zones near the toe for durability and performance.",
-            "MIDSOLE - MX-P: 0.6mm SENSITIVE FULL-LENGTH. UPPER - Mesh (Polyester)",
         ]
     },
     {
         id: 31,
-        gender: 'kids',
-        category: 'running',
-        brand: 'under armour',
-        name: "Under Armour Unisex-Child Grade School Scramjet 5 Running Shoe",
-        price: 110,
-        badges: ['sale'],
-        discount: 40,
+        gender: 'women',
+        category: 'climbing',
+        brand: 'tenaya',
+        name: "Tenaya Oasi Climbing Shoe",
+        price: 199.93,
         colors: [
             {
-                id: '31a',
-                color: 'black',
-                images: [
-                    'https://m.media-amazon.com/images/I/61u3pi+HNnL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/51hWmKnNy-L._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/619w-+sQN4L._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/61as4vxcw6L._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/51fLZnrjZRL._AC_UY695_.jpg',
-                ]
-            },
-            {
                 id: '31b',
-                color: 'orangered',
+                color: '',
                 images: [
-                    'https://m.media-amazon.com/images/I/71vZi08B2DL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71FzJZm3J-L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71FBTjA5ZjL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/812Qa0K4+BL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71O5Fac9MjL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81JR30hFvyL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61ZMybZ4RZL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61-btsFL9bL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61QSd5GVPcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61ThW6aXHwL._AC_UY695_.jpg',
                 ]
             }
         ],
-        sizes: [3.5,4,4.5,5,5.5,6,6.5,7],
+        sizes: [5,5.5,6,6.5,7],
         details: [
-            "Made in the USA or Imported",
+            "100% Synthetic",
             "Rubber sole",
-            "Sublimated upper with molded panels provide extra protection & the ultimate comfort fit",
-            "External heel counter for increased stability",
-            "Plush sockliner maintains it's shape for all-day comfort",
-            "Charged Cushioning midsole uses compression molded foam for ultimate responsiveness & durability",
-            "UA HeroFlex sole provides extra flexibility to help your foot you move smoothly in every direction",
-            "Strategically placed rubber pods beneath the heel & forefoot for greater durability with less weight",
-            "Lace type: Standard tie",
+            "Upper Material: microfiber, [tongue] Lycra",
+            "Lining: TXT-treated cotton",
+            "Closure: hook-and-loop, Draxtor PAT",
+            "Midsole: dual-layer GI 1.8 and TST 150",
+            "Rubber: Vibram XS Grip",
+            
         ]
     },
     {
@@ -1558,7 +1579,7 @@ export const ALL_PRODUCTS = [
         gender: 'women',
         category: 'running',
         brand: 'brooks',
-        name: "",
+        name: "brooks women's running",
         price: 119.85,
         badges: ['sale','best seller'],
         discount: 35,
@@ -2248,22 +2269,25 @@ export const ALL_PRODUCTS = [
         gender: 'unisex',
         category: 'climbing',
         brand: 'red chili',
-        name: "Red Chili Voltage LV II Climbing Shoe",
-        price: 216.99,
+        name: "Red Chili Ventic Air Climbing Shoe - Blue 12",
+        price: 112.45,
+        badges: ['sale', 'limited'],
+        discount: 30,
         colors: [
             {
                 id: '50a',
-                color: 'orange',
+                color: 'teal',
                 images: [
-                    'https://m.media-amazon.com/images/I/61cYU+IwSRL._AC_SX679_.jpg',
-                    'https://m.media-amazon.com/images/I/71SgvWRy9kL._AC_SX679_.jpg',
-                    'https://m.media-amazon.com/images/I/61UE7mc2tDL._AC_SX679_.jpg',
-                    'https://m.media-amazon.com/images/I/61m7SdWMEHL._AC_SX679_.jpg',
-                    'https://m.media-amazon.com/images/I/61OzKvpAvGL._AC_SX679_.jpg'
+                    'https://m.media-amazon.com/images/I/71EbLzdncGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71aO0ceri+L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/819t3kgzXLL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71GKIpA8yGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71RVIM3JySL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71kL7LAxrTL._AC_UY695_.jpg'
                 ]
             }
         ],
-        sizes: [6,6.5,7,7.5,8,8.5,9],
+        sizes: [12],
         details: [
             "Upper: Microfiber 2.0mm, Tongue: Polyester Knit",
             "Footbed: Microfiber 2.0mm/Suede leather (Toe Box), Closure System: Double Hook and Loop",
@@ -2729,6 +2753,550 @@ export const ALL_PRODUCTS = [
             "Comfy, secure fit: The 3D mesh is soft and flexible to cradle your foot in a reassuring fit – supported by a lateral TPU construction.",
             "Outdoor ready: The grippy Contagrip outsole keeps you on track even when the going gets slippery, steep or unstable. Did we mention the protective toe cap?",
         ]
+    },
+    {
+        id: 64,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's GT-2000 10 Running Shoes",
+        price: 149.8,
+        colors: [
+            {
+                id: '64a',
+                color: 'blue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61HrEKubsOL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61EP4IGRJfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61ztZHXIVvL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61fxiuoEFcL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61UznjH2ZaL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '64b',
+                color: 'lightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61Kz6ZGdSQL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61pITKiPPGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Vgj5G9dQL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61qMNo-nKhL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71RCQ5mnLBL._AC_UY695_.jpg',
+                ]
+            },
+            {
+                id: '64c',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61u+vhDrvrL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/615kfDWrDPL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/614ZNOuJDeL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/614XNeubhjL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61oDgExUcVL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '64d',
+                color: 'orange',
+                images: [
+                    'https://m.media-amazon.com/images/I/614KccEzaCL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61sXOEGM+OL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Af1s7Z04L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61gJbMIqtKL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61eshR95qaL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '64e',
+                color: 'midnightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/613AUa01nlL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61iNUmxNbXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61nSUPubTRL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61u9n+3Hu7L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61vmPBnZguL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '64f',
+                color: 'grey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61ZoBg6St2L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61zObE9+tKL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61RRKxXF-RL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/612VAsx02fL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61ZoBg6St2L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '64g',
+                color: 'gainsboro',
+                images: [
+                    'https://m.media-amazon.com/images/I/61BTBzpHk8L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61JQ61z22IL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61jQrX3xdiL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61MOzDfdSFL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/618Hw4XFInL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            }
+        ],
+        sizes: [7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13],
+        details: [
+            "Made in the USA or Imported",
+            "Engineered knit upper offers a supportive and comfortable foothold:",
+            "Rearfoot and Forefoot GEL Technology Cushioning System: Attenuates shock during impact and toe-off phases, and allows movement in multiple planes as the foot transitions through the gait cycle.",
+            "FLYTEFOAM Technology: Provides lightweight cushioning.",
+            "FLYTEFOAM Propel Technology: ASICS energetic foam formulation that provides supreme bounce thanks to a unique elastomer compound.",
+            "3D SPACE CONSTRUCTION feature improves compression at footstrike:",
+        ]
+    },
+    {
+        id: 65,
+        gender: 'men',
+        category: 'running',
+        brand: 'brooks',
+        name: "Brooks Men’s Trace 2 Neutral Running Shoe",
+        price: 134.85,
+        badges: ['new'],
+        colors: [
+            {
+                id: '65a',
+                color: 'dodgerblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/81-wwRfvYnL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91T74Eds1qL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81qcJuaPhcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/813p+TdCK9L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81xbTwjyL5L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71wM8EvAwqL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '65b',
+                color: 'yellow',
+                images: [
+                    'https://m.media-amazon.com/images/I/81PzWC78lhL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91gSw4zC4ZL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81mWJVVjeXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91rwJA1Q3QL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81FyEGuzi-L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/812SIHy3KrL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '65c',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/81TeFFBXvNL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81SIyPtHkEL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81jINmnENoL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81gClXksjvL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81dzrl5QVjL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/812tEBW+YdL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '65d',
+                color: 'steelblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/711BNbjbWuL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81tH0H1FVrL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81y7ui+x4YL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/810Q1nbNA3L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81owqPc6X3L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81UFK47qwPL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '65e',
+                color: 'grey',
+                images: [
+                    'https://m.media-amazon.com/images/I/81nM90e3+FL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81hmjhEmfmL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/817heMSWrJL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81mLM62xnjL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81o3AonZNhL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81NRVaPZlBL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '65f',
+                color: 'darkorange',
+                images: [
+                    'https://m.media-amazon.com/images/I/81V7CarVwrL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91Ulbstj3LL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71EJ5KGrd+L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '65g',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/81-DcpMf5bL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81tuwR6QVyL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81ZpMUhtVvL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/8106V4kwRZL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81+kjiEpQSL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81xtZzhqqAL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        details: [
+            "fabric-and-synthetic",
+            "Imported",
+            "Rubber sole",
+            "THIS MEN’S SHOE IS FOR: The Trace 2 offers neutral support for runners who want a soft, smooth ride that they can depend on every time they lace up.",
+            "SOFT CUSHIONING: BioMoGo DNA cushioning adapts to your speed, stride, and weight to help deflect impact away from your body to keep you comfortable mile after mile.",
+            "COMFORABLE, SECURE FIT: The 3D Fit Print and air-mesh provide extra structure to hold your foot in place while also providing optimum airflow.",
+            "SMOOTH TRANSITIONS: The segmented crash pad cushions your landing and creates a soft, seamless heel-to-toe transition from take-off to landing.",
+            "BREATHABLE UPPER: New, engineered air-mesh upper offers more breathability to keep runners dry and comfortable.",
+        ]
+    },
+    {
+        id: 67,
+        gender: 'men',
+        category: 'basketball',
+        brand: 'nike',
+        name: "Nike Dunk Low Grey Navy Blue Limited Edition DD1391-003",
+        price: 335,
+        badges: ['limited'],
+        colors: [
+            {
+                id: '67a',
+                color: 'saddlebrown',
+                images: [
+                    'https://m.media-amazon.com/images/I/61NOLP0BCUL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61nZyHo7WBL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71xU0s+qlsL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Yu+BQnvGL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61VYbCkbXzL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '67b',
+                color: 'dimgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61QZdzaQfgL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61gvinmtL-L._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61E+AaVcrZL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61ZeakE9uqL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61eB8Bp6HQL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61GGFi3RaTL._AC_SX695._SX._UX._SY._UY_.jpg',
+                ]
+            }
+        ],
+        sizes: [9,11],
+        details: [
+            "Leather sole",
+            "The Nike Dunk Low “USA” is a May 2022 release of the patriotic sneaker in a classic colorway and all-leather construction",
+            "The “USA” celebrates major holidays that are observed by the US during the spring and summer",
+            "This design features Valerian Blue overlays that are contrasted with a white leather base on the mid-panel, toe, and heel",
+            "Blue Swooshes cover the mid-panels and pops of red appear on the tongue and heel logo to complete the design",
+            "As is the nylon pull tab on the heel that assists with on/off wearability",
+
+        ]
+    },
+    {
+        id: 68,
+        gender: 'women',
+        category: 'running',
+        brand: 'salomon',
+        name: "Salomon Women's Sonic 3 Confidence Road Running Shoes",
+        price: 94.15,
+        badges: ['sale','limited'],
+        discount: 40,
+        colors: [
+            {
+                id: '68a',
+                color: 'darkslategrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/71-qf6O6SsL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71rarwU6mhL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71Wcf2fG8-L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61o0losx6cL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/719o2av8F6L._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71QTTyleZ0L._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/91yMp7BHqCL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [5],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "Road Running Shoes: The Salomon Sonic 3 Confidence Trailing shoe offers assurance on the road with Optivibe foam to reduce vibrations and limit muscle fatigue and a road-specific Sensifit upper for comfort",
+            "Security and Stability: This road running shoe features a geometric decoupling axis that is oriented more laterally to create a larger medial platform for a more secure forward transition from heel to toe",
+            "Go The Distance: Whether you love daily road running in your neighborhood, an escape to a local trail, or something more rugged, Salomon makes shoes that ensure you have a smooth ride on all terrain",
+            "Time to Play: Whether you are into trail running, hiking, backpacking, skiing, or mountaineering, Salomon has shoes and gear for men and women to help you conquer a new distance, personal record, or event",
+            "Since 1947 Salomon has used our passion for outdoor sports and innovation to create progressive gear. Our road and trail running shoes, hiking sneakers, boots, and water shoes help make any path your own",
+        ]
+    },
+    {
+        id: 69,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's Gel-Nimbus 25 Running Shoes",
+        price: 188.94,
+        colors: [
+            {
+                id: '69a',
+                color: 'darkturquoise',
+                images: [
+                    'https://m.media-amazon.com/images/I/610TT8lYTrL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61zCPhIkL0L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61TN-UDW-NL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/617AQeKl4uL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/618DfKAhGKL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61lCSy6qkrL._AC_UX695_.jpg'
+                ]
+            },
+            {
+                id: '69b',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61t5+TKSZkL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51qsEp8YT9L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51WrBpyan6L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Db1M197GL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61xwVOiXtuL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51UXErvPULL._AC_SX695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '69c',
+                color: 'darkorange',
+                images: [
+                    'https://m.media-amazon.com/images/I/61LB6YGVFtL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61IF8fadhOL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Hg4Fb-abL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61rfSXM-KTL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61HQbcScGZL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Bdl5ZgrxL._AC_SX695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '69d',
+                color: 'dodgerblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61grg9Zt65L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61SHBC2h8tL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61AM0Pl8mbL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61A7ZdOgihL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61UV6HFxUyL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61coXgS4tpL._AC_SX695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "Engineered knit upper: Wraps the foot with a soft feel while improving breathability",
+            "At least 75% of the shoe's main upper material is made with recycled content to reduce waste and carbon emissions:",
+            "The sockliner is produced with the solution dyeing process that reduces water usage by approximately 33% and carbon emissions by approximately 45% compared to the conventional dyeing technology:",
+            "PureGEL technology: Helps provide lightweight cushioning and softer landings",
+            "FF BLAST ECO PLUS technology: Cushioning creates a softer landing and a more responsive toe-off",
+        ]
+    },
+    {
+        id: 70,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'red chili',
+        name: "Red Chili Fusion LV Climbing Shoe",
+        price: 183.84,
+        colors: [
+            {
+                id: '70a',
+                color: 'darkcyan',
+                images: [
+                    'https://m.media-amazon.com/images/I/51tg+fkFMrL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51mkKwzSuEL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [5.5,6,7.5,7,7.5,8,8.5,9],
+        details: [
+            "Rubber sole",
+            "The new FUSION LV has been completely overhauled. The low volume version of the FUSION has a slimmer overall cut, making it particularly ideal for a more feminine foot or narrower fit",
+            "The rand has more downturn and a slightly wider forefoot. A further new feature is the innovative fastening system, which combines the benefits of VCR and laces to enable rapid and customized adjustment to the feet",
+            "The laces are made of extremely strong and abrasion-resistant Technora aramid fibers left over in Red Chili's production department and normally used for paragliders. The tongue made of 3 mm thick neoprene improves the comfort and distributes the closure forces more evenly",
+            "Thanks to these features, the FUSION LV offers enhanced performance and a more individual fit while still remaining a versatile all-rounder",
+            "This is further highlighted by the full-surface RX-1 ALLROUND sole, which impresses with particularly well-balanced properties with regard to friction, sensitivity, durability, and edge stability",
+        ]
+    },
+    {
+        id: 71,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'tenaya',
+        name: "Tenaya Mastia Rock Climbing Shoes",
+        price: 243.74,
+        colors: [
+            {
+                id: '71a',
+                color: 'darkblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/811blG5nJSL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81UA51stbAL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71Yit4ZDBJL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71tsEjEYyJL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [2,3.5,5,5.5,6.5,7.5,8,8.5,9,9.5],
+        details: [
+            "Cut-out material: microfibre.",
+            "Closure: Draxtor Velcro",
+            "Sole: vibram xs, grip, 3.5 mm.",
+            "Width: 4, 5 out of 5",
+            "Hardness: 3, 5 out of 5",
+        ]
+
+    },
+    {
+        id: 72,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'tenaya',
+        name: "Tenaya Mundaka Climbing Shoe - Mens 7/Womens 8",
+        price: 156,
+        badges: ['limited'],
+        colors: [
+            {
+                id: '72a',
+                color: 'lightgreen',
+                images: [
+                    'https://m.media-amazon.com/images/I/61v8HMewhoL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61tCU7NslhL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61aGv7XXu9L._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61NbWbX1gLL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61QyW1JmC8L._AC_SX679_.jpg',
+                ]
+            }
+        ],
+        sizes: [6.5,7],
+        details: [
+            "Upper Material: natural leather microfiber",
+            "Lining: cotton with TXT treatment",
+            "Closure: hook and loop, Draxtor PAT system",
+            "Midsole: double GX 1.4 and TST 131",
+            "Rubber: Vibram XS Grip",
+        ]
+    },
+    {
+        id: 73,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'tenaya',
+        name: "Tenaya Iati Rock Climbing Shoes",
+        price: 199.51,
+        badges: ['new','limited'],
+        colors: [
+            {
+                id: '73a',
+                color: 'orange',
+                images: [
+                    'https://m.media-amazon.com/images/I/81Q74ZoqAYL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61LXpVZTKzL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61Abs6W0NpL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61NC+KWvLSL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61Tr6Ckj47L._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/81s0+Y2UKKL._AC_SX679_.jpg',
+                ]
+            }
+        ],
+        sizes: [11.5,12.5],
+        details: [
+            "100% Leather",
+            "Upper Material: microfiber, leather, Lycra",
+            "Lining: TXT-treated cotton",
+            "Closure: Draxtor hook-and-loop",
+            "Midsole: 2D multi-layer stretch tex, GI (1.8mm), TST 150",
+            "Rubber: Vibram XS Grip (3.5mm)",
+        ]
+    },
+    {
+        id: 74,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'red chili',
+        name: "Red Chili Voltage LV Climbing Shoe",
+        price: 193.83,
+        badges: ['limited'],
+        colors: [
+            {
+                id: '74a',
+                color: 'orangered',
+                images: [
+                    'https://m.media-amazon.com/images/I/51DtS4hgkYL._AC_SX679_.jpg',
+                    'https://m.media-amazon.com/images/I/61Tohb5BCnL._AC_SX679_.jpg',
+                ]
+            }
+        ],
+        sizes: [5.5,6],
+    },
+    {
+        id: 75,
+        gender: 'men',
+        category: 'hiking',
+        brand: 'columbia',
+        name: "Columbia Men's Hatana Max Outdry Hiking Shoe",
+        price: 149.94,
+        colors: [
+            {
+                id: '74a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61u4ud9nNCL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61bVorIFk6L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61oaJiIylQL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51AEfAE6B7L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/510xR2NcEWL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/510ZY3vxquL._AC_UY695_.jpg',
+                    ''
+                ]
+            },
+            {
+                id: '74b',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/61DKW5QJniL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61FftvFY2OL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61AY35sASeL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/512QNuVRTnL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51jMZQfS8bL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61PHtFQv5FL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    ''
+                ]
+            },
+            {
+                id: '74c',
+                color: 'mediumturquoise',
+                images: [
+                    'https://m.media-amazon.com/images/I/71uvBt895uL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71quRTNUgxL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71wrqUEK8-L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71TrPxgtlQL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71IxmxoapNL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61ejR9DiD8L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71ABXkN6cvL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "WATERPROOF & BREATHABLE: A technical shoe that features our highest performing seam sealed waterproof and breathable materials, designed for a wide range of wet or dry terrain",
+            "AGGRESSIVE TRAIL SHOES: Trail excursions are no match for the Men’s Hatana Max OutDry shoe. Sleek and aggressive, this off-road shoe will bring the season’s greatest destinations to you",
+            "LACE UP STABILITY: Breathable open cell mesh with synthetic overlays and TPU Midfoot Structure deliver extra protection, while our Navic Fit System delivers a natural mid-foot lock down",
+            "COMFORT AND SUPPORT: TechLite+ single density foam midsole delivers a responsive underfoot cushioning experience while providing superior comfort and stability on the trail",
+            "WET AND DRY TRACTION: Featuring Adapt Trax, an outsole that provides exceptional traction in wet and dry conditions, utilizing an aggressive front and rear lug pattern for optimal grip over a variety of loose terrain",
+
+        ]
     }
 ]
 
@@ -2748,6 +3316,116 @@ export const filters = (products) => ({
     color: getFilters(colors(products)),
 })
 
-export const ALL_FILTERS = {
-    all_products: filters(ALL_PRODUCTS)
-}
+const MEN_PRODUCTS = ALL_PRODUCTS.filter(product => product.gender === 'men')
+const WOMEN_PRODUCTS = ALL_PRODUCTS.filter(product => product.gender === 'women')
+const UNISEX_PRODUCTS = ALL_PRODUCTS.filter(product => product.gender === 'unisex')
+
+const RUNNING_PRODUCTS = ALL_PRODUCTS.filter(product => product.category === 'running')
+const CROSS_PRODUCTS = ALL_PRODUCTS.filter(product => product.category === 'cross training')
+const CLIMBING_PRODUCTS = ALL_PRODUCTS.filter(product => product.category === 'climbing')
+const HIKING_PRODUCTS = ALL_PRODUCTS.filter(product => product.category === 'hiking')
+
+const BESTSELLERS_PRODUCTS = ALL_PRODUCTS.filter(product => product.badges?.includes('best seller'))
+const SALE_PRODUCTS = ALL_PRODUCTS.filter(product => product.badges?.includes('sale'))
+const NEW_PRODUCTS = ALL_PRODUCTS.filter(product => product.badges?.includes('new'))
+
+const NIKE_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'nike')
+const SALOMON_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'salomon')
+const BROOKS_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'brooks')
+const UNDERARMOUR_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'under armour')
+const TENAYA_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'tenaya')
+const REDCHILI_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'red chili')
+const ASICS_PRODUCTS = ALL_PRODUCTS.filter(product => product.brand === 'asics')
+
+export const SHOP_COLLECTIONS = [
+    {
+        collection: 'all_products',
+        products: ALL_PRODUCTS,
+        filters: filters(ALL_PRODUCTS)
+    },
+    {
+        collection: 'men',
+        products: MEN_PRODUCTS,
+        filters: filters(MEN_PRODUCTS)
+    },
+    {
+        collection: 'women',
+        products: WOMEN_PRODUCTS,
+        filters: filters(WOMEN_PRODUCTS)
+    },
+    {
+        collection: 'unisex',
+        products: UNISEX_PRODUCTS,
+        filters: filters(UNISEX_PRODUCTS)
+    },
+    {
+        collection: 'running',
+        products: RUNNING_PRODUCTS,
+        filters: filters(RUNNING_PRODUCTS)
+    },
+    {
+        collection: 'cross_training',
+        products: CROSS_PRODUCTS,
+        filters: filters(CROSS_PRODUCTS)
+    },
+    {
+        collection: 'climbing',
+        products: CLIMBING_PRODUCTS,
+        filters: filters(CLIMBING_PRODUCTS)
+    },
+    {
+        collection: 'hiking',
+        products: HIKING_PRODUCTS,
+        filters: filters(HIKING_PRODUCTS)
+    },
+    {
+        collection: 'nike',
+        products: NIKE_PRODUCTS,
+        filters: filters(NIKE_PRODUCTS)
+    },
+    {
+        collection: 'tenaya',
+        products: TENAYA_PRODUCTS,
+        filters: filters(TENAYA_PRODUCTS)
+    },
+    {
+        collection: 'salomon',
+        products: SALOMON_PRODUCTS,
+        filters: filters(SALOMON_PRODUCTS)
+    },
+    {
+        collection: 'brooks',
+        products: BROOKS_PRODUCTS,
+        filters: filters(BROOKS_PRODUCTS)
+    },
+    {
+        collection: 'under-armour',
+        products: UNDERARMOUR_PRODUCTS,
+        filters: filters(UNDERARMOUR_PRODUCTS)
+    },
+    {
+        collection: 'red-chili',
+        products: REDCHILI_PRODUCTS,
+        filters: filters(REDCHILI_PRODUCTS)
+    },
+    {
+        collection: 'asics',
+        products: ASICS_PRODUCTS,
+        filters: filters(ASICS_PRODUCTS)
+    },
+    {
+        collection: 'best-seller',
+        products: BESTSELLERS_PRODUCTS,
+        filters: filters(BESTSELLERS_PRODUCTS)
+    },
+    {
+        collection: 'sale',
+        products: SALE_PRODUCTS,
+        filters: filters(SALE_PRODUCTS)
+    },
+    {
+        collection: 'new',
+        products: NEW_PRODUCTS,
+        filters: filters(NEW_PRODUCTS)
+    }
+]

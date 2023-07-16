@@ -1,0 +1,151 @@
+.shopFiltersGroup {
+    border-bottom: 1px solid var(--color-dark);
+    padding: .5rem 0;
+    width: 100%;
+
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        .heading {
+            text-transform: capitalize;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        &::after {
+            content: '\002D';
+            font-size: 1.8rem;
+        }
+        &.open::after {
+            content: "\002B";
+            font-size: 1.8rem;
+        }
+    }
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        li {
+            position: relative;
+        }
+
+        &.color {
+            
+            .shopFiltersGroup__checkbox-checkmark {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                border-color: rgba(0,0,0,.2);
+                opacity: .75;
+            }
+            .shopFiltersGroup__checkbox:checked ~ .shopFiltersGroup__checkbox-checkmark{
+                border: .15rem solid var(--color-dark);
+                opacity: 1;
+            }
+            .shopFiltersGroup__checkbox:checked ~ .shopFiltersGroup__checkbox-checkmark::after {
+                content: none;
+            }
+            .shopFiltersGroup__checkbox:hover ~ .shopFiltersGroup__checkbox-checkmark {
+                opacity: 1;
+            }
+        }
+
+        &.size {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .5rem;
+
+            .shopFiltersGroup__checkbox-checkmark {
+                width: 4rem;
+                height: 3.2rem;
+                border-radius: 1px;
+                position: relative;
+            }
+            #filter-value {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.4rem;
+            }
+            .shopFiltersGroup__checkbox:checked ~ .shopFiltersGroup__checkbox-checkmark{
+                border-color: #000;
+                background-color: #000;
+                
+            }
+            .shopFiltersGroup__checkbox:checked ~ .shopFiltersGroup__checkbox-checkmark::after {
+                content: none;
+            }
+            .shopFiltersGroup__checkbox:checked ~ #filter-value {
+                color: #fff;
+            }
+        }
+    }
+    
+    &__input {
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    &__checkbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &__checkbox-checkmark {
+        opacity: 1;
+        position: relative;
+        flex-shrink: 0;
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 1px solid var(--color-grey-dark);
+        border-radius: 2px;
+        transition: all .25s;
+    }
+    #filter-value {
+        font-weight: 400;
+    }
+    &__checkbox:hover ~ &__checkbox-checkmark {
+        background-color: var(--color-grey-dark);
+    }
+    &__checkbox:checked ~ &__checkbox-checkmark {
+        background-color: var(--color-dark);
+        border-color: var(--color-dark);
+    }
+    &__checkbox:checked ~ &__checkbox-checkmark::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 4px;
+        height: 1rem;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    &__checkbox:checked ~ #filter-value {
+        font-weight: 500;
+        color: #000;
+    }
+}

@@ -5,6 +5,7 @@ import ShopContainer from "./ShopContainer/ShopContainer";
 import ShopSort from "./ShopSort/ShopSort";
 import ShopSearch from "./ShopSearch/ShopSearch";
 import ShopNav from "./ShopNav/ShopNav";
+import ShopFiltersGroup from "./ShopFiltersGroup/ShopFiltersGroup";
 
 export {
     Navbar,
@@ -15,4 +16,5 @@ export {
     ShopSort,
     ShopSearch,
     ShopNav,
+    ShopFiltersGroup
 }

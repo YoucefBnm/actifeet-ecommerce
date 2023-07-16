@@ -1,0 +1,7 @@
+.shop {
+    &__container {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        column-gap: 4rem;
+    }
+}
