@@ -32,3 +32,104 @@
         color: var(--color-light);
     }
 }
+
+label {
+    font: inherit;
+    text-transform: capitalize;
+    font-weight: 500;
+    user-select: none;
+}
+input {
+    max-width: 47rem;
+    min-width: 43rem;
+    border: 1px solid var(--color-grey);
+    padding: 1rem 1rem;
+    background-color: #fff;
+    transition: all .2s ease;
+    outline: none;
+    font: inherit;
+    &:focus {
+        border-color: #000;
+        box-shadow: var(--shadow-xs);
+    }
+}
+
+.customBtn {
+    font-family: var(--font-heading);
+    text-transform: capitalize;
+    user-select: none;
+    &--bg,
+    &--shadow {
+        min-width: 17.8rem;
+        max-width: 47.7rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    &--bg {
+        transition: background-color .25s ease;
+        &--dark {
+            background-color: #000;
+            color: #fff;
+            &:hover {
+                box-shadow: var(--shadow-xs);
+                background-color: lighten($color: #000000, $amount: 25);
+            }
+        }
+    }
+    &--shadow {
+        width: 100%;
+        transition: all .25s ease;
+
+        &--primary {
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+            &:hover {
+                background-color: var(--color-primary);
+                color: #fff;
+            }
+        }
+    }
+
+    &--link {
+        display: inline-block;
+        position: relative;
+        &--warning {
+            color: var(--color-warning);
+        }
+        &--primary {
+            color: var(--color-primary);
+        }
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+
+        }
+        &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+            transition: all .25s ease;
+
+        }
+        &::before {
+            transform: scaleX(0);
+            transition: all .35s ease;
+            transform-origin: right;
+            z-index: 1;
+        }
+        &:hover {
+            &::after {
+                transform: scaleX(0);
+            }
+            &::before {
+                transform: scaleX(1);
+                
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
-import { Navbar, Footer } from './components'
+import { Navbar, Footer, UserFormInputGroup } from './components'
 import { Routes, Route } from 'react-router-dom'
-import { Home, Shop } from './routes'
+import { Home, Login, Register, Shop } from './routes'
 import './sass/App.scss'
 
 function App() {
@@ -8,7 +8,12 @@ function App() {
   return (
     <>
       <Navbar />
-  
+
+      <Register />
+
+      <Login />
+
+      
       <Routes>
         <Route index element={<Home />} />
         <Route path='/shop/*' element={<Shop />} />

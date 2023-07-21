@@ -6,11 +6,15 @@ import ShopSort from "./ShopSort/ShopSort";
 import ShopSearch from "./ShopSearch/ShopSearch";
 import ShopNav from "./ShopNav/ShopNav";
 import ShopFiltersGroup from "./ShopFiltersGroup/ShopFiltersGroup";
+import UserFormInputGroup from "./UserFormInputGroup/UserFormInputGroup";
+import CustomBtn from "./CustomBtn/CustomBtn";
 
 export {
     Navbar,
     Footer,
-
+    UserFormInputGroup,
+    CustomBtn,
+    
     ShopContainer,
     ProductCard,
     ShopSort,

@@ -94,6 +94,9 @@
         &--x-0 {
             left: 0;
         }
+        &--xr-0 {
+            right: 0;
+        }
         &--x-50 {
             left: 50%;
         }
@@ -134,5 +137,12 @@
     }
     &--auto {
         overflow: auto;
+    }
+}
+
+.cursor {
+
+    &--pointer {
+        cursor: pointer;
     }
 }

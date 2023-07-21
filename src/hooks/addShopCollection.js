@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import { SHOP_COLLECTIONS } from '../assets/shop_data'
-import { addProducts } from "../utils/firebase/firebase.utils";
+import { ALL_FILTERS, ALL_PRODUCTS, SHOP_COLLECTIONS } from '../assets/shop_data'
+import { addFilters, addProducts } from "../utils/firebase/firebase.utils";
 
 export function addShopCollection () {
     useEffect(() => {
-        addProducts('shopCollections', SHOP_COLLECTIONS)
+        addProducts('all_products', ALL_PRODUCTS)
+        addFilters('all_products-filters', ALL_FILTERS)
     }, [])
 }

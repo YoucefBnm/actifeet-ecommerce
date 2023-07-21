@@ -94,8 +94,8 @@ const ProductCard = ({ product }) => {
             </LayoutGroup>
 
             <div className="productCard__details">
-                <h3 className="heading heading--xs">{brand.toUpperCase()}</h3>
                 <p>{gender} {category}</p>
+                <h3 className="heading heading--xs">{brand.toUpperCase()}</h3>
 
                 <div className="productCard__price">
                     {

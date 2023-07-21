@@ -1,5 +1,39 @@
 export const ALL_PRODUCTS = [
     {
+        id: 92,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's Gel-Kayano 30 Anniversary Shoes",
+        price: 225.84,
+        badges: ['limited'],
+        colors: [
+            {
+                id: '92a',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/617XT-qm2mL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61RtcZha1aL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71tb1LzfBKL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/719MfYcZM2L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/6151zkJSmiL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/619qb9pYUSL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/617XT-qm2mL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,7.5,9,11,12],
+        details: [
+            "Made in the USA or Imported",
+            "STYLISH & COMFY MEN’S ATHLETIC SHOES: The advanced stability and cushioning properties of these ASICS GEL-Kayano 30 Anniversary shoes make them an ideal choice for 5Ks to full marathons. Each shoe weighs 10.7 oz and features an AHARPLUS heel plug that improves the durability of the outsole. The primary materials that are used in making these shoes contain a minimum of 20 percent recycled content, making them a sustainable choice.",
+            "FF BLAST PLUS ECO CUSHIONING: The midsole of these tennis shoes for men is updated with FF BLAST PLUS ECO cushioning that offers superior comfort and performance. With approx. 24% bio-based content, this cushioning helps create cloud-like softness in every step. The upper material of these shoes is made with recycled materials to reduce carbon emissions and waste. These imported shoes also come with a rubber outsole that offers the best grip.",
+            "SUPERIOR CONSTRUCTION: These men’s walking shoes feature a removable OrthoLite X-55 sock liner that improves comfort and is produced with the solution dyeing process that reduces water usage by approximately 33% and carbon emissions by approximately 45% compared to the conventional dyeing technology. The polyester, synthetic mesh lining provides enhanced comfort and breathability. They come in a D-medium width. Their reflective details improve visibility.",
+            "4D GUIDANCE SYSTEM: The 4D GUIDANCE SYSTEM of these GEL-Kayano gym shoes for men helps provide adaptive stability. Placed on the inside of the midsole, this adaptive foam helps reposition your arch after each impact so that you can walk comfortably. Their engineered stretch knit polyester upper improves breathability while the external heel counter helps keep the foot stable for a more comfortable stride.",
+            "AVAILABLE IN DIFFERENT SIZES: Available in a White/Deep Ocean color, these ASICS tennis shoes for men come in different sizes for you to choose from - 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, and 16. They feature a PureGEL technology that is strategically positioned below the heel and is 65% softer than standard GEL technology. The measurements of these shoes were taken using size 7, width D - Medium so they may vary by size.",
+
+        ]
+    },
+    {
         id: 66,
         gender: 'women',
         category: 'running',
@@ -404,7 +438,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/71uWHTv-EBL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/71QLRjKPysL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/61tjxZs4qxL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             },
             {
@@ -499,7 +532,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/51HpwgiR2+L._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51unrDJHdpL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51HpwgiR2+L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             }
         ],
@@ -643,7 +675,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/61uS+iY7tZL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51oCGWinSnL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51BPWGnk1yL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             },
             {
@@ -771,7 +802,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/713uDaDQ7bL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/71y-0smOW8L._AC_SX695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/71Mk5QVil6L._AC_SX695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             },
             {
@@ -1197,7 +1227,7 @@ export const ALL_PRODUCTS = [
         gender: 'men',
         category: 'running',
         brand: 'under armour',
-        name: "",
+        name: "under armour charged running",
         price: 178.75,
         colors: [
             {
@@ -1219,7 +1249,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/61uHtXO+43L._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/719qIUiwLNL._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/715AmbWLzuL._AC_UY695_.jpg',
-                    ''
                 ]
             },
             {
@@ -1334,7 +1363,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/71SFNlpJzjL._AC_UX695_.jpg',
                     'https://m.media-amazon.com/images/I/71UWWYrgM4L._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/41woEHfZ2gL._AC_UX695_.jpg',
-                    ''
                 ]
             }
         ],
@@ -1369,8 +1397,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/51MS8ITby4L._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51a-0MTogvL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51iaEE8fxZL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    '',
-                    ''
                 ]
             }
         ],
@@ -3256,7 +3282,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/51AEfAE6B7L._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/510xR2NcEWL._AC_UY695_.jpg',
                     'https://m.media-amazon.com/images/I/510ZY3vxquL._AC_UY695_.jpg',
-                    ''
                 ]
             },
             {
@@ -3269,7 +3294,6 @@ export const ALL_PRODUCTS = [
                     'https://m.media-amazon.com/images/I/512QNuVRTnL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/51jMZQfS8bL._AC_SY695._SX._UX._SY._UY_.jpg',
                     'https://m.media-amazon.com/images/I/61PHtFQv5FL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    ''
                 ]
             },
             {
@@ -3297,8 +3321,1184 @@ export const ALL_PRODUCTS = [
             "WET AND DRY TRACTION: Featuring Adapt Trax, an outsole that provides exceptional traction in wet and dry conditions, utilizing an aggressive front and rear lug pattern for optimal grip over a variety of loose terrain",
 
         ]
+    },
+    {
+        id: 76,
+        gender: 'women',
+        category: 'cross training',
+        brand: 'reebok',
+        name: "Reebok Women's Nanoflex TR Cross Trainer",
+        price: 126.8,
+        badges: ['sale'],
+        discount: 15,
+        colors: [
+            {
+                id: '76a',
+                color: 'lightgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/71cd58-NaJL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71jsUuk-kGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91dJ4YnbkBL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91jv55nqn1L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71xvccv1ArL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71TTjtx1rcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71yg1T6UiQL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '76b',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71qXTeLyQyL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71ik4PPJV+L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91DTa-dwthL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71mFNTDKWvL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71wlPJIysfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71Xvd72nhpL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71J36o9gzuL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [5,5.5,6,6.5,8.5,9,9.5,10,10.5,11],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "Versatile training shoes with a breathable upper and flexible outsole",
+            "Durable net mesh helps keep feet cool",
+            "Flex grooves in the forefoot allow for a full range of motion",
+            "A TPU heel clip supports multidirectional movement",
+            "A CMEVA midsole delivers long-lasting comfort",
+
+        ]
+    },
+    {
+        id: 77,
+        gender: 'men',
+        category: 'running',
+        brand: 'reebok',
+        name: "Reebok Men's Floatride Energy Symmetros",
+        price: 84.93,
+        badges: ['sale', 'best seller'],
+        discount: 35,
+        colors: [
+            {
+                id: '77a',
+                color: 'darkturquoise',
+                images: [
+                    'https://m.media-amazon.com/images/I/61NaLsASY4L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Bv-Lw24CL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61DHLpdaiZL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71jou25HzuL._AC_UY695_.jpg',
+                ]
+            },
+            {
+                id: '77b',
+                color: 'tomato',
+                images: [
+                    'https://m.media-amazon.com/images/I/71GIgEpALqL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/815Xfcuw60L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81j6UoDZ7AL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81cN2E0aXGL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91ntQdnp-4L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81FZA1nLZ2L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,9,9.5,10,10.5,11,11.5,12,13],
+        details: [
+            'rubber sole'
+        ]
+    },
+    {
+        id: 78,
+        gender: 'men',
+        category: 'cross training',
+        brand: 'reebok',
+        name: "Reebok Men's Nanoflex Cross Trainer",
+        price: 103.12,
+        badges: ['sale', 'limited'],
+        discount: 35,
+        colors: [
+            {
+                id: '78a',
+                color: 'turquoise',
+                images: [
+                    'https://m.media-amazon.com/images/I/71mRJ4B3TUL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71ADEgn-wrL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71nxXCL7TfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71HFFUKw02L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91q6-31ntqL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81OuvwaZG-L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            }
+        ],
+        sizes: [6.5,7,7.5],
+        details: [
+            "Rubber sole",
+            "Heel measures approximately No Heel",
+            "Rubber Sole",
+        ]
+    },
+    {
+        id: 79,
+        gender: 'women',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Women's Gel-DS Trainer 26 Running Shoes",
+        price: 119,
+        colors: [
+            {
+                id: '79a',
+                color: 'blue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61mhRX+pYgL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61XW2sYuvpL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61jLo3AQYqL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/612RyjelBaL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Isodp1vzL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71D15JXXfGL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/713VnvA0fLL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '79b',
+                color: 'midnightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61HhybrKtPL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61veyUuv-vL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61ZdbpLisDL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61n+j9aVTHL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61NRWhWGYvL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61TknaR23yL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71ze-GXvr5L._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [6.5,7,7.5,8,8.5,9,9.5,10],
+        details: [
+            "Rubber sole",
+            "FLYTEFOAM technology provides lightweight and durable cushioning:",
+            "FLYTEFOAM Technology: Provides lightweight cushioning.",
+            "Rearfoot GEL technology cushioning system: Attenuates shock during impact phase and allows for a smooth transition to midstance.",
+            "Engineered knit mesh upper:",
+            "Engineered knit upper:",
+             
+        ]
+    },
+    {
+        id: 80,
+        gender: 'men',
+        category: 'cross training',
+        brand: 'puma',
+        name: "PUMA Softride One4all Mens Slip On",
+        price: 90,
+        colors: [
+            {
+                id: '80a',
+                color: 'red',
+                images: [
+                    'https://m.media-amazon.com/images/I/812eJrxVxwL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/816klOv5qXL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71bxntGgvKL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91SthbodNCL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81gm+sjT-7L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71musWyJHcL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [4.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
+        details: [
+            "Ethylene Vinyl Acetate sole",
+            "Rubber outsole for easy traction and grip",
+            "Unique lacing detail",
+            "SOFTRIDE EVA technology to provide extreme cushioning and all-day comfort",
+            "PUMA branding for added style",
+        ]
+    },
+    {
+        id: 81,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's GT-1000 11 Running Shoes",
+        price: 94.84,
+        colors: [
+            {
+                id: '81a',
+                color: 'midnightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61F0OFA89WL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61SEEZRa5cL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61yNN6DOCcL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61SbIm4vh7L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61qKIcQumHL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/510yhJkufxL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71rst3dQ4qL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '81b',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61eVaW2aIHL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61lbB13rCPL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61lCzYn7wiL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/611l7m0Xx8L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61BIe1rLIvL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Zel2O3+yL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71RRNuIEVXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "Engineered mesh upper: Improves breathability and wraps the foot with a soft feel.",
+            "External heel counter: Improves the fit and helps increase stability.",
+            "LITETRUSS technology: Improves medial support and midfoot integrity.",
+            "FLYTEFOAM cushioning: Provides lightweight impact absorption.",
+            "Rearfoot GEL technology: Improves impact absorption and creates a softer feeling at footstrike.",
+        ]
+    },
+    {
+        id: 82,
+        gender: 'men',
+        category: 'running',
+        brand: 'under armour',
+        name: "Under Armour Men's Charged Verssert Road Running Shoe",
+        price: 97.94,
+        colors: [
+            {
+                id: '82a',
+                color: 'darkolivegreen',
+                images: [
+                    'https://m.media-amazon.com/images/I/617qDGYjvQL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Trln3YGUL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61rjYeJR7pL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71GvfKAp0cL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71hJ+VF1FjL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        details: [
+            "Rubber sole",
+            "Mix-material upper with durable suede & leather overlays & breathable mesh details",
+            "EVA sockliner provides soft, step-in comfort",
+            "Charged Cushioning midsole uses compression molded foam for ultimate responsiveness & durability",
+            "Solid rubber outsole covers high impact zones for greater durability with less weight",
+            "Warning: This product can expose you to chemicals including chromium (hexavalent compounds), which is known in the State of California to cause cancer and birth defects or other reproductive harm.",
+        ]
+    },
+    {
+        id: 83,
+        gender: 'women',
+        category: 'cross training',
+        brand: 'nike',
+        name: "Nike Women's Flex Trainer 4 Sneaker",
+        price: 98.1,
+        colors: [
+            {
+                id: '83a',
+                color: 'grey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61rfZaEiWhL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61GZtWVRaIL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71GnP6zWRzL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71qyAAwYBWL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61XxOPLrnqL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61stFKCXefL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71holZVPdJL._AC_SX695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "Shaft measures approximately low-top from arch",
+            "LIGHTWEIGHT FLEXIBILITY: Built for low-impact workouts and circuit training, these women's shoes are designed for flexibility and traction.",
+            "DYNAMIC CONTAINMENT: Synthetic upper and heel strap of the Nike shoe adds support and containment.",
+            "DURABLE DESIGN: Foam midsole is durable enough to double as the outsole, dramatically reducing weight. Rubber in high-wear areas adds durability.",
+            "BREATHABLE COMFORT: Mesh in the forefoot of these women's sneakers enhances breathability. Tri-star outsole pattern expands to disperse pressure.",
+
+        ]
+
+    },
+    {
+        id: 84,
+        gender: 'unisex',
+        category: 'cross training',
+        brand: 'puma',
+        name: "PUMA Better Foam Xterra Winter Trail Running Shoe",
+        price: 93.52,
+        badges: ['sale'],
+        discount: 25,
+        colors: [
+            {
+                id: '84a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/512iFZt91rL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/518wAnEYnkL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51aqNp9nCrL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51O0O68rbwL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51vn1ZfYSIL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61KtwlbHIQL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
+        details: [
+            "fabric-and-synthetic",
+            "Rubber sole",
+            "BETTER FOAM: LIGHTWEIGHT ECO FOAM MATERIALS FOR A REDUCED CARBON FOOTPRINT AND A COMFORTABLE RIDE. SUSTAINABLE INSOLE: Sustainable insole containing 20% recycled foam, 5% bio-based material, 100% recycled mesh top layer.",
+            "TRAIL RUBBER: Durable rubber compound that provides all-surface grip, redesigned for trail TRAIL TREAD: Rubber is wrapped up to provide protection from rocks and roots, and give exceptional downhill traction",
+            "MIDFOOT SUPPORT: Adaptive fit system offering a secure lockdown, through the mid-foot wrap FIT & MATERIAL: Uses the semi-curved last that was developed based on biomechanical research, executed on a ripstop mesh upper for durability",
+        ]
+    },
+    {
+        id: 85,
+        gender: 'women',
+        category: 'running',
+        brand: 'under armour',
+        name: "Under Armour Women's Charged Running Shoe",
+        price: 115.04,
+        colors: [
+            {
+                id: '85a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61nU+H9+zxL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61g57ZdwOUL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71jNTobfh8L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81uL9E+4WaL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71lHryykjXL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '85b',
+                color: 'mediumblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/71NAj6j-B3L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/611EcMmK3uL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71je00jEhtL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81XjmHCLNIL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/715+XtbmS2L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '85c',
+                color: 'grey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61p27PqCA0L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/6134KGChcIL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61IQ3B-ZkeL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71lrKmJn7NL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61q7Fmj-ErL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [5.5,7,7.5,8,8.5,9,9.5,10],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "Under Armour’s mission is to make all athletes better through passion, design and the relentless pursuit of innovation.",
+            "The technology behind Under Armour's diverse product assortment is complex, but the program for reaping the benefits is simple: wear HeatGear when it's hot, ColdGear when it's cold, and AllSeasonGear between the extremes.",
+            "Where we started? It all started with an idea to build a superior T-shirt",
+            "The technology behind Under Armour's diverse product assortment for men, women and youth is complex, but the program for reaping the benefits is simple: wear HeatGear when it's hot, ColdGear when it's cold, and AllSeasonGear between the extremes.",
+        ]
+    },
+    {
+        id: 86,
+        gender: 'men',
+        category: 'running',
+        brand: 'nike',
+        name: "Nike Men's Running Training Shoes",
+        price: 156.12,
+        colors: [
+            {
+                id: '86a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71hAYsfN2rL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71POd-Cc2cL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/713IKFddTsL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71bKx9moYSL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81etQWHF1PL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61qWiHj-A5L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/91n-6D727LL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '86b',
+                color: 'lightgreen',
+                images: [
+                    'https://m.media-amazon.com/images/I/71txcq7rHCL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71ByURLjW+L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/818haIkRmgL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61SUy58OiCL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71FqmOfddEL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/611NSGe-GuL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81sJjX6V0bL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [8.5,10.5,11,11.5,12,12.5],
+        details: [
+            "Rubber sole",
+            "Nike Zoom Metcon Turbo 2 Men's Training Shoes"
+        ]
+    },
+    {
+        id: 87,
+        gender: 'men',
+        category: 'climbing',
+        brand: 'black diamond',
+        name: "Black Diamond Mens Momentum Lace Rock Climbing Shoes",
+        price: 135.8,
+        badges: ['best seller'],
+        colors: [
+            {
+                id: '87a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71iNQceBQ5L._AC_UX679_.jpg',
+                    'https://m.media-amazon.com/images/I/71m8xDoVuOL._AC_UX679_.jpg',
+                    'https://m.media-amazon.com/images/I/71IX3cVmqJL._AC_UX679_.jpg',
+                    'https://m.media-amazon.com/images/I/71BholE3ttL._AC_UX679_.jpg',
+                ]
+            }
+        ],
+        sizes: [8,8.5,9,9.5,10,10.5,11,11.5,12,12.5],
+        details: [
+            "100% Synthetic",
+            "Lace-Up closure",
+            "Machine Wash",
+            "Snug fit: You may wish to size up a half-size larger than normal",
+            "Featuring Engineered Knit Technology for exceptional breathability and our innovative proprietary molded rubber, the Momentum Lace is built for ultimate comfort and excels in performance",
+            "Designed as the perfect entry-level climbing shoe, this lace-up shoe provides ultimate adjustability for all day comfort at the gym or crag",
+            "Neutral, flat last for vertical climbing or all-day comfort",
+            "Lace entry for fit adjustability",
+            "4.3mm rubber is built for durability and molded for optimal consistency and performance",
+        ]
+    },
+    {
+        id: 88,
+        gender: 'women',
+        category: 'running',
+        brand: 'under armour',
+        name: "Under Armour Women's Charged Bandit 2 Sp Running Shoe",
+        price: 98,
+        badges: ['sale'],
+        discount: 15,
+        colors: [
+            {
+                id: '88a',
+                color: 'darkslategrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/61MBM9526hL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/615H0eNHoLL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71iKyiZT8ZL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61RHAAlJvlL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/7179phbJtGL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "Under Armour’s mission is to make all athletes better through passion, design and the relentless pursuit of innovation.",
+            "The technology behind Under Armour's diverse product assortment is complex, but the program for reaping the benefits is simple: wear HeatGear when it's hot, ColdGear when it's cold, and AllSeasonGear between the extremes.",
+            "Where we started? It all started with an idea to build a superior T-shirt",
+            "The technology behind Under Armour's diverse product assortment for men, women and youth is complex, but the program for reaping the benefits is simple: wear HeatGear when it's hot, ColdGear when it's cold, and AllSeasonGear between the extremes.",
+
+        ]
+    },
+    {
+        id: 89,
+        gender: 'women',
+        category: 'running',
+        brand: 'under armour',
+        name: "Under Armour Women's Charged Escape 4 D Running Shoe",
+        price: 129.87,
+        colors: [
+            {
+                id: '89a',
+                color: 'darkslateblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/5170zMx18FL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51K3xrGaflL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Zk2Sywm9L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/510fuNU1cpL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/6180EXU94hL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '89b',
+                color: '',
+                images: [
+                    'https://m.media-amazon.com/images/I/61cnrU9JZPL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61APGQwf78L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71noeONWeCL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/619hyfrGMEL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61wMfOndjEL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,12],
+        details: [
+            "Rubber sole",
+            "Engineered mesh upper is lightweight & breathable",
+            "Firm external heel counter for additional support that keeps the back of the foot locked in place",
+            "Molded Comfort Collar locks in the heel with a soft, plush feel for zero distractions",
+            "Full-length molded sockliner forms to the foot, eliminating slippage & providing ideal underfoot comfort",
+            "Charged Cushioning midsole is firmer in the heel & softer in the forefoot for support & comfort",
+            "TPU midsole shank for added stability & support",
+            "Rubber outsole provides full ground contact with deep flex grooves for flexibility where you need it",
+            "High-abrasion rubber added to heavy wear areas of the sole to increase durability",
+            "Lace type: Standard tie",
+            "NEUTRAL: For runners who need flexibility, cushioning & versatility",
+        ]
+    },
+    {
+        id: 90,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's Gel-Pulse 14 Sneaker, Island Blue Sun Peach, 10",
+        price: 190,
+        badges: ['new'],
+        colors: [
+            {
+                id: '90a',
+                color: 'aqua',
+                images: [
+                    'https://m.media-amazon.com/images/I/61waF4gTRAL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51Q1KOnp1HL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61-5lMGkwKL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61+aOmltsLL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61PSDTc83ZL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61kUUN0O-tL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/615+ygivCYL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11],
+        details: [
+            "100% Synthetic",
+            "Rubber sole",
+            "Shaft measures approximately Ankle Strap from arch",
+            "Running shoe",
+            "Breathability",
+            "Long distance",
+
+        ]
+    },
+    {
+        id: 91,
+        gender: 'men',
+        category: 'running',
+        brand: 'asics',
+        name: "ASICS Men's Gel-Kayano 30 Running Shoes",
+        price: 195.84,
+        badges: ['new'],
+        colors: [
+            {
+                id: '91a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61+blLQCH9L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51ZXsgaZPfL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61sIweyPhEL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51a7-SzfpFL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51jWu2gKtiL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61GtI1yKawL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61PFg33sBdL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '91b',
+                color: 'dodgerblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61pIsyJEE1L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Jc1sUBzwL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61RCgfDaRVL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61SRDQpYBzL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51tbtn4OFCL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61qAAFnHiwL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61hianG0i8L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '91c',
+                color: 'lightblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/61zKF5pzgXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61GFveVvd-L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61vtd1048ZL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61PbgwNXqaL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51NBwWMhbcL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/6119YUIVB0L._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61evCtxOi7L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '91d',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/51dDzD3HZML._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51Zrhxw6GML._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51kK+apY1AL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51gQ8n-MXfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51LcEyee-8L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61U0imMtqtL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61rR08UN3LL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13,14,15],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "Engineered stretch knit upper: Improves breathability",
+            "External back heel counter: Helps keep the foot stable and provide a more comfortable stride",
+            "4D GUIDANCE SYSTEM feature: Helps create adaptive stability for a more balanced stride",
+            "Rearfoot PureGEL technology: Helps provide lightweight cushioning and softer landings",
+            "FF BLAST PLUS ECO cushioning is made with approximately 20% bio-based content and helps provide cloud-like comfort:",
+        ]
+
+    },
+    {
+        id: 93,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: "SCARPA Booster Vegan Rock Climbing Shoes for Sport Climbing and Bouldering - Specialized Performance for Sensitivity and Support",
+        price: 267.84,
+        badges: ['new'],
+        colors: [
+            {
+                id: '93a',
+                color: 'orange',
+                images: [
+                    'https://m.media-amazon.com/images/I/71FES2cisaL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/718CPHYTnpL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71XSzTcJ8WL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61FVeZth9uL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/712WjZRCxjL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
+        details: [
+            "Vibram XS Grip 2 (3.5mm) sole",
+            "Aggressive and Powerful | A sharp downturn lets you toe-in on micro-edges in steep terrain, while retaining a soft and supportive fit for added sensitivity on rock.",
+            "Microsuede Upper | The vegan, synthetic microsuede material stretches just slightly, molding perfectly to the shape of your foot.",
+            "Vibram XS Grip 2 Rubber | Ideal for any rock type and style, the XS Grip 2 rubber is both stiff and sticky, giving you the grip you need for steeper walls and overhanging boulders.",
+            "DTS Active Rand | The highly asymmetric design is amplified by the DTS system which transfers power directly to your big toe and helps the shoe retain its downturned shape.",
+            "PAF System | Offsetting the soft midsole, this innovative heel cup spreads out the force created while heel hooking, offering the stick you want, without added pressure on your Achilles tendon.",
+        ]
+    },
+    {
+        id: 94,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'scarpa',
+        name: "SCARPA Furia S Rock Climbing Shoes for Sport Climbing and Bouldering - Specialized Performance for Sensitivity",
+        price: 166.12,
+        badges: ['best seller'],
+        colors: [
+            {
+                id: '94a',
+                color: 'red',
+                images: [
+                    'https://m.media-amazon.com/images/I/61o68bTGARS._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/513bQovOcbS._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61vwu19m-lS._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/51JPnOj2WtS._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/716CVCa9ZuL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5],
+        details: [
+            "Vibram XS Grip 2 (3.5mm) sole",
+            "Built For The Steeps | Soft, flexible, and precise, the Furia S combines high-asymmetry with an aggressive downturn that sport climbers and boulderers will love.",
+            "Vibram XS Grip 2 Rubber | Ideal for any rock type and style, the XS Grip 2 rubber is both stiff and sticky, giving you the grip you need for steeper walls and overhanging boulders.",
+            "IPR-Tension System | This active-rand system connects the heel cup to the edging platform, providing more power while retaining the sensitive feel of barefoot climbing.",
+            "Surround Rubber Tension | By wrapping a layer of soft M50 rubber around the forefoot, SCARPA added a touch of stiffness to the toe, providing an unparalleled stick for toe hooks and scums.",
+            "Integrated Heel Cup | Designed to hug your heel, the integrated heel cup provides perfect support and stability for finicky heel-hooks.",
+        ]
+    },
+    {
+        id: 95,
+        gender: 'men',
+        category: 'climbing',
+        brand: 'la sportiva',
+        name: "La Sportiva Mens Solution Rock Climbing Shoe",
+        price: 247,
+        colors: [
+            {
+                id: '95a',
+                color: 'yellow',
+                images: [
+                    'https://m.media-amazon.com/images/I/61nEyJ8sveL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Egpf7kS7L._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/61+CFf+cLuL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61CNrNOklHL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61RaBXMFm+L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61jUTw9zugL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5],
+        details: [
+            "Vibram sole",
+            "Upper Material: leather, Lorica",
+            "Lining: [toe box, arch] HF",
+            "Closure: hook-and-loop, Face Lacing System",
+            "Midsole: [toe] LaspoFlex (1.1mm)",
+            "Rubber: Vibram XS Grip2 (4mm)",
+
+        ]
+    },
+    {
+        id: 96,
+        gender: 'women',
+        category: 'hiking',
+        brand: 'columbia',
+        name: "Columbia Women's Facet 75 Mid Outdry Hiking Shoe",
+        price: 185,
+        badges: ['new'],
+        colors: [
+            {
+                id: '96a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61P6oTVnUTL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61TNzKF+VmL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61by6He+xfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51rkuZk5CgL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51XiAO1k-1L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61Faoir-RxL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+
+            },
+            {
+                id: '96b',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/61dsL8ANxcL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61EZJWrZBLL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61qSE4eFgcL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51JeVcIJFTL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51JUxcchZTL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/614z+K3QdnL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+
+            }
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "Adapt Trax outsole provides exceptional traction in wet and dry conditions",
+            "Hike Specific Traction with 5mm Lug Heights, OrthoLite Eco insole is compromised of 17% of total eco content delivering enhanced breathability and lightweight long term cushioning",
+            "Techlite PLUSH is our Pinnacle max cushioning experience with a signature design. Delivers the smoothest transition and greater durability than any foam we have ever created. TPU Heel Clip for added Stability",
+            "Durable mesh with no sew overlays and TPU Midfoot support for extra protection. Outdry waterproof, breathable construction. NAVIC FIT SYSTEM delivers a natural midfoot lock down",
+        ]
+    },
+    {
+        id: 97,
+        gender: 'women',
+        category: 'running',
+        brand: 'columbia',
+        name: "Columbia Women's Montrail Trinity Mx Trail Running Shoe",
+        price: 165.4,
+        colors: [
+            {
+                id: '97a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61Xk4RAVk7L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Y2Y9RR9oL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/613xgXM06WL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51hSR-QKlVL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51Wcul0mn4L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Q30gXyYDL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "TRAIL RUNNER: Our pinnacle trail running shoe engineered to keep you on the trails longer, with our highest level of cushioning, traction, and protection",
+            "NAVIC FIT: For comfort and stability running or hiking on uneven terrain. Experience natural mid-foot lockdown from our lace system that locks your heel in place, provides enhanced fit and keeps the shoe secure in motion",
+            "TECHLITE PLUSH: For long-distance performance trail running and hiking on variable terrain. A highly durable, maximum cushioning experience, with enhanced transition from heel to toe",
+            "LIGHTWEIGHT SUPPORT: Seamless mesh with asymmetrical lacing provides exceptional fit and support, while the haptic print delivers additional lightweight stability",
+            "ADAPT TRAX: For advanced traction in wet or slippery conditions. This advanced traction system features a tread pattern that delivers enhanced trail performance for the best grip over wet terrain",
+        ]
+    },
+    {
+        id: 98,
+        gender: 'women',
+        category: 'hiking',
+        brand: 'columbia',
+        name: "Columbia Women's Wildone Anthem Sneaker",
+        price: 111.2,
+        badges: ['sale'],
+        discount: 18,
+        colors: [
+            {
+                id: '98a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61yDngr2s-L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61bVsq6Nh5L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61tKdfdX6wL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51UKIn+abeL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/514kDwcPYKL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61sCm9HoYyL._AC_UY695_.jpg',
+                ]
+            },
+            {
+                id: '98b',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/61OuxMkDYzL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61e9JCDcKTL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61TvfFsNC5L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51l6hq5IBrL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51gJ5FbQ2mL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51lS6gOlxJL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61hOPQJaoFL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
+        details: [
+            "Imported",
+            "Rubber sole",
+            "Shaft measures approximately Ankle from arch",
+            "Boot opening measures approximately 1 around",
+            "STYLISH SNEAKER: This all-purpose sneaker will be your new go-to for work and play, in the city and beyond",
+            "TECHLITE: For lightweight impact absorption on varied surfaces. Long-lasting cushioning with high energy return",
+            "OMNI-GRIP: For multi-terrain traction in rock, dirt, and gravel, in wet/dry conditions. Specially formulated compounds and tread design for cross-terrain stability and grip with strategically blended lug patterns and rubber compounds",
+            "READY FOR ANYTHING: A breathable mesh upper, stable and responsive cushioning, and a traction sole can keep up with wherever your day takes you",
+            "BUILT TO LAST: Columbia’s attention to detail is what sets our footwear apart. Specifying only the highest quality materials, expert stitching, and craftsmanship. This is long-lasting footwear you will enjoy for seasons to come",
+        ]
+    },
+    {
+        id: 99,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'red chili',
+        name: "Red Chili Sausalito Climbing Shoe 2020",
+        price: 168.49,
+        colors: [
+            {
+                id: '99a',
+                color: 'darkred',
+                images: [
+                    'https://m.media-amazon.com/images/I/71HS0PKJl7L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/715EOGFZ4yL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/813QJUhKygL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71rUGWq0TML._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71iXsidwSSL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [7.5,9.5,14],
+        details: [
+            "Leather sole",
+            "A very comfortable all-rounder for long sessions, multi-pitch routes and alpine tours",
+            "Wide range of fit due to the variable and extended lacing",
+            "Firm midsole for extra support, Neutral and flat rand",
+            "Upper made of high-quality leather, Soft padding at the upper edging for maximum comfort",
+        ]
+    },
+    {
+        id: 100,
+        gender: 'unisex',
+        category: 'climbing',
+        brand: 'tenaya',
+        name: "Tenaya Oasi LV Rock Climbing Shoe, 4.5 Men's / 5.5 Women's Turquoise",
+        price: 243.82,
+        badges: ['new'],
+        colors: [
+            {
+                id: '100a',
+                color: 'turquoise',
+                images: [
+                    'https://m.media-amazon.com/images/I/61VOiOtjhcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61z0TSQsfnL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61Ay6mYuOXL._AC_UY695_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5],
+        details: [
+            "Rubber sole",
+            "Upper Material: microfiber, [tongue] Lycra",
+            "Lining: TXT-treated cotton",
+            "Closure: hook-and-loop, Draxtor PAT",
+            "Midsole: double, GI 1.8y TST 150",
+            "Rubber: Vibram XS Grip (3.5mm)",
+        ]
+    },
+    {
+        id: '101',
+        gender: 'women',
+        brand: 'nike',
+        category: 'cross training',
+        name: "Nike Women's Gymnastics Shoe",
+        price: 177.44,
+        colors: [
+            {
+                id: '101a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71cB-TyEC7L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71+bdY8z7DL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71wmJ37f1eL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71uwKhT1m4L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71vpD7QW1yL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71D0qYEQK0L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/817J4xAo3FL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+            {
+                id: '101b',
+                color: 'white',
+                images: [
+                    'https://m.media-amazon.com/images/I/61gqcsVcwLL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71kDpLW6yxL._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+            {
+                id: '101c',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/51mkwk6ydJL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51WdjCL+RVL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/510x1IaY9pL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/51T7aklyHXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61QvFB64-bL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/6155ggri+bL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71u-G99CGOL._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [6,6.5,7,7.5,8,8.5],
+        details: [
+            "Rubber sole",
+            "Manufacturer: Nike",
+            "Item Trademark: NIKE",
+            "Style: Gymnastics",
+        ]
+    },
+    {
+        id: 102,
+        gender: 'women',
+        category: 'running',
+        brand: 'nike',
+        name: "Nike Superrep Go Womens Running Trainers Cj0860 Sneakers Shoes",
+        price: 150,
+        sizes: [5,6,6.5,7,7.5,8,8.5,9,9.5],
+        colors: [
+            {
+                id: '102a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/5172vWX5yGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51zV6rOazcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51mEjIQTSiL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61QBXWgMpsL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61S3qTSBcSL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51EhepH5QVL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '102b',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/61yizPWYgKL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61e8XRQtr8L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/615oAMYtlkL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61GxZL2-ttL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/510xJNXrKfL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71EvDuizSZL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71H1DDC0u2L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,11],
+        details: [
+            "Rubber sole",
+            "Soft mesh breathes and flexes as you move",
+            "Ribbing tightens around your foot during quick moves for a supportive feel",
+            "The arc up the outside creates support when you move side to side",
+            "Rubber tread in high-wear areas provides stability and traction",
+            "Thick Foam Cushioning",
+        ]
+    },
+    {
+        id: 103,
+        gender: 'unisex',
+        category: 'cross training',
+        brand: 'reebok',
+        name: "Reebok Unisex Nano X3",
+        price: 165.74,
+        colors: [
+            {
+                id: '103a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/514kUN9KmDL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51S8Lz+n-lL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51vxaeWBZLL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51e95FoXfJL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61ofDXy+CqL._AC_UY695_.jpg',
+                ]
+            }
+        ],
+        sizes: [6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13],
+        details: [
+            "Rubber sole",
+            "[REE]CYCLED: Made with at least 30% recycled or repurposed materials",
+            "Regular fit",
+            "Flexweave woven textile upper",
+            "Lace closure",
+            "Designed for: Training",
+        ]
+    },
+    {
+        id: 104,
+        gender: 'men',
+        category: 'cross training',
+        brand: 'nike',
+        name: "Nike Men's Sneaker",
+        price: 144.33,
+        colors: [
+            {
+                id: '104a',
+                color: 'dimgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/51hgOr-XPjL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51UfFhvHueL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51kSPfliCGL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/51bQKwt-26L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/614t7FK6iFL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61rz7Cb2HoL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71zX9MY20wL._AC_UY695_.jpg'
+                ]
+            },
+            {
+                id: '104b',
+                color: 'darkred',
+                images: [
+                    'https://m.media-amazon.com/images/I/71AyALZDrhL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71nekQP5sSL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71bbvwUyjLL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71Vsfx4AQRL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81Cucd7yzVL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/61YPHMgqbEL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/91Xqv4r1g6L._AC_SY695._SX._UX._SY._UY_.jpg'
+                ]
+            },
+        ],
+        sizes: [8.5,9,9.5,10,10.5,11,11.5,12],
+        details: [
+            "Rubber sole",
+            "Delivering a smooth, responsive ride, Nike React foam makes a comfortable, cushioned base that feels lightweight and springy when you kick into high gear for cardio and sprints.",
+            "Grippy rubber wraps around your arch during intense rope climbs. Rubber tread gives you traction and helps you stay on your feet when transitioning from the training room floor to the pavement.",
+            "The wide, flat heel gets even more stable with an inner plate that distributes weight from edge to edge. It also flexes to make it comfortable for cardio and sprints.",
+            "Lightweight mesh with textured overlays in high-wear areas helps keep your foot cool without sacrificing durability.",
+            "Tab locks down the laces with a hook-and-loop closure to help keep them out of the way.",
+            
+        ]
+    },
+    {
+        id: 105,
+        gender: 'men',
+        category: 'hiking',
+        brand: 'salomon',
+        name: "Salomon Men's OUTPULSE Hiking Shoes for Men",
+        price: 108,
+        badges: ['new'],
+        colors: [
+            {
+                id: '105a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/71zIahSIr-L._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71mstQ5pILL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71oUi0s+yZL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71oZ4aFwCOL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/61epe9yVbcL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/71AQU7A8FeL._AC_UX695_.jpg'
+                ]
+            },
+            {
+                id: '105b',
+                color: 'lightgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/71csDUV27VL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71pGsfUPanL._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71z4awnV-xL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71oDFGfZZQL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71Dvg96Vd2L._AC_SX695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71Z4UQi+jJL._AC_SX695._SX._UX._SY._UY_.jpg'
+                ]
+            }
+        ],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14],
+        details: [
+            "Rubber sole",
+            "Energy Blade Outdoor: Engineered into the forefoot area of the bottom unit, Energy Blade is a lightweight TPU plate works in cohesion with the soft and springy midsole to filter the ground and deliver a smooth, dynamic stride.",
+            "Fuze Surge: Made up of one of our softest EVA compounds and 30% natural rubber, Fuze Surge foam is pillowy for instant comfort and responsive enough to keep rebound levels high. Engineered using less artificial polymers, this midsole compound delivers a more earth-conscious, smooth yet dynamic stride.",
+            "Reverse Camber: Inspired by Salomon's ski heritage, this curved midsole geometry helps you feel like you are floating over the ground.",
+
+        ]
+    },
+    {
+        id: 106,
+        gender: 'men',
+        category: 'climbing',
+        brand: 'la sportiva',
+        name: "La Sportiva Mens Aragon Rock Climbing Shoes",
+        price: 165,
+        badges: ['best seller'],
+        colors: [
+            {
+                id: '106a',
+                color: 'lightgrey',
+                images: [
+                    'https://m.media-amazon.com/images/I/91QfXIveAUL._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81kropLV2yL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81TVXBjML6L._AC_UX695_.jpg',
+                    'https://m.media-amazon.com/images/I/81xkbq8JxSL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81B1atFG8qL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/819Z9XE3fRL._AC_UY695_.jpg',
+                ]                
+            }
+        ],
+        sizes: [4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,13.5],
+        details: [
+            "Rubber sole",
+            "A super comfortable rock climbing shoe for men who are ready for a performance upgrade from their current entry level shoes",
+            "Soft, unlined leather upper material controls moisture and provide all-day comfort and longevity. Padded and wicking cotton lined tongue for comfort and breathability.",
+            "Slightly downturned, asymmetrical shape promotes more aggressive climbing while maintaining comfort. 1.1mm LaspoFlex, semi-stiff midsole for moderate support.",
+            "Super sticky proprietary FriXion RS Rubber Compound for great friction and durability. The 1/2 forefoot sole allows for easy resoling so you can keep using your new favorite shoe.",
+            "Dual hook and loop closure system for easy on/off comfort and a precise fit. 2 heel pull-tabs for easy on/off as well as hooking to a carabiner.",
+        ]
     }
 ]
+
 
 const genders = products => [...new Set(products.map(product => product.gender.toLowerCase()))]
 const categories = products => [...new Set(products.map(product => product.category.toLowerCase()))]
@@ -3315,6 +4515,8 @@ export const filters = (products) => ({
     size: getFilters(sizes(products)),
     color: getFilters(colors(products)),
 })
+
+export const ALL_FILTERS = filters(ALL_PRODUCTS)
 
 const MEN_PRODUCTS = ALL_PRODUCTS.filter(product => product.gender === 'men')
 const WOMEN_PRODUCTS = ALL_PRODUCTS.filter(product => product.gender === 'women')
