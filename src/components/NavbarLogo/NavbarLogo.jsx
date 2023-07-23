@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
-import { Logo } from '../../assets'
+import { Logo, LogoMobile } from '../../assets'
 
-const NavbarLogo = () => {
+const NavbarLogo = ({ view }) => {
   return (
     <div className="nav__logo nav__item">
         <Link to='/' className='d--block'>
-            <Logo />
+            {
+              view==='mobile'
+              ? <LogoMobile />
+              : <Logo />
+            }
         </Link>
     </div>
   )

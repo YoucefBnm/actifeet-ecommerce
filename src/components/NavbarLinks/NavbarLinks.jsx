@@ -2,7 +2,10 @@ import { navLinks } from "../../constants"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { fadeEffect, heightAnimationVariants } from "../../utils/motion/motion.utils"
+import { heightAnimationVariants } from "../../utils/motion/motion.utils"
+import NavDropdownItem from "../NavDropdownItem/NavDropdownItem"
+import { IconChevronDown } from "../../assets"
+
 const NavbarLinks = () => {
     const [dropdownItems, setDropdownItems] = useState(null)
     const [activeTab, setActiveTab] = useState(null)
@@ -25,7 +28,10 @@ const NavbarLinks = () => {
                   className="nav__item height--100 pad--y-1" 
                   key={navLink.id}
                 >
-                  <button className="nav-link">{navLink.title}</button>
+                  <button className="nav-link d--flex-inline gap--05">
+                    <span>{navLink.title}</span>
+                    <span><IconChevronDown /></span>
+                  </button>
                   {
                     (dropdownItems && index===activeTab) 
                     && (
@@ -38,13 +44,7 @@ const NavbarLinks = () => {
                       >
                         {
                           dropdownItems.map((navSubmenu) => (
-                            <motion.li variants={fadeEffect} key={navSubmenu.id} className="nav__submenu-item pos--relative ">
-                              <Link to={navSubmenu.route}>
-                                <img src={navSubmenu.image} alt={navSubmenu.title} />
-                                <div className="nav__submenu-item-overlay"></div>
-                                <h3 className="heading heading--sm">{navSubmenu.title}</h3>
-                              </Link>
-                            </motion.li>
+                            <NavDropdownItem key={navSubmenu.id} item={navSubmenu} />
                           ))
                         }
                       </motion.ul>

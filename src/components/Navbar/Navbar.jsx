@@ -14,7 +14,7 @@ const Navbar = () => {
 
       <NavbarLinks />
       
-      <div className="nav__utils d--flex gap--2">
+      <div className="nav__utils d--flex d--justify-end gap--2">
         <NavbarAccount />
         <NavbarCartIcon />
       </div>

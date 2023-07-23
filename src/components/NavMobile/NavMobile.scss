@@ -1,0 +1,56 @@
+.navMobile {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__top {
+        
+    }
+    &__links {
+
+    }
+    &__toggle {
+        gap: .4rem;
+        span {
+            width: 2.2rem;
+            height: .2rem;
+            background-color: #000;
+            border-radius: 1px;
+        }
+    }
+    
+    &__sub,
+    &__submenu {
+        position: absolute;
+        right: 0;
+        top: 100%;        
+        width: calc(100vw - 8.4rem - 6rem);
+        padding: 1rem 1.5rem;
+        border-top: 1px solid #F2F1F4;
+        background-color: #fff;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+        min-height: 26.8rem;
+    }
+    &__submenu {
+        top: 0;
+    }
+    &__submenu-items {
+        li 
+        {
+            a {
+                span {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    #btn-close-submenu {
+        font-weight: 500;
+        line-height: 1;   
+        width: 100%;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #F2F1F4;
+    }
+}

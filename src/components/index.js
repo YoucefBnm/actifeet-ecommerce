@@ -3,6 +3,8 @@ import NavbarLogo from "./NavbarLogo/NavbarLogo";
 import NavbarAccount from "./NavbarAccount/NavbarAccount";
 import NavbarCartIcon from "./NavbarCartIcon/NavbarCartIcon";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
+import NavDropdownItem from "./NavDropdownItem/NavDropdownItem";
+import NavMobile from "./NavMobile/NavMobile";
 
 import Footer from "./Footer/Footer";
 import ProductCard from "./ProductCard/ProductCard";
@@ -16,11 +18,13 @@ import CustomBtn from "./CustomBtn/CustomBtn";
 
 export {
     Navbar,
+    NavMobile,
     NavbarLogo,
     NavbarAccount,
     NavbarCartIcon,
     NavbarLinks,
-
+    NavDropdownItem,
+    
     Footer,
     UserFormInputGroup,
     CustomBtn,

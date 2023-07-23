@@ -126,7 +126,9 @@ button {
     font-family: var(--font-heading);
     font-weight: 600;
     transition: color .2s ease;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    line-height: 1;
+
     &:hover {
         color: var(--color-grey-dark);
     }
