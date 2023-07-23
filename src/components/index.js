@@ -1,4 +1,9 @@
 import Navbar from "./Navbar/Navbar";
+import NavbarLogo from "./NavbarLogo/NavbarLogo";
+import NavbarAccount from "./NavbarAccount/NavbarAccount";
+import NavbarCartIcon from "./NavbarCartIcon/NavbarCartIcon";
+import NavbarLinks from "./NavbarLinks/NavbarLinks";
+
 import Footer from "./Footer/Footer";
 import ProductCard from "./ProductCard/ProductCard";
 import ShopContainer from "./ShopContainer/ShopContainer";
@@ -11,6 +16,11 @@ import CustomBtn from "./CustomBtn/CustomBtn";
 
 export {
     Navbar,
+    NavbarLogo,
+    NavbarAccount,
+    NavbarCartIcon,
+    NavbarLinks,
+
     Footer,
     UserFormInputGroup,
     CustomBtn,

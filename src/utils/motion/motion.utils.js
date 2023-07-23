@@ -13,7 +13,6 @@ export const heightAnimationVariants = {
         opacity: 0,
         scaleY: 0,
         originY: 0,
-        transition: { duration: 0.25 } 
     },
     visible: {
         opacity: 1,
@@ -22,10 +21,9 @@ export const heightAnimationVariants = {
             type: 'spring',
             stiffness: 300,
             damping: 35,
-                    
-            duration: .5,
-            staggerChildren: .25,
-            delayChildren: .5
+            delay: .3,
+            staggerChildren: .3,
+            delayChildren: .6
         }
     }
 }

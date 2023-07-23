@@ -1,5 +1,4 @@
 import { ShopSearch, ShopSort } from '../../components'
-import { ShopCollectionProvider } from '../../context/ShopCollection.context'
 import './ShopCollection.scss'
 
 const ShopCollection = () => {

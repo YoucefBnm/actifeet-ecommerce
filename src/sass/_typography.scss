@@ -12,28 +12,34 @@ button {
     background: none;
     border: none;
     outline: none;
+    font: inherit;
 }
 
 .heading {
     text-transform: uppercase;
     font-family: var(--font-heading);
     line-height: 1.2;
-    letter-spacing: 0;
     &--lg {
         font-size: 4.2rem;
+        letter-spacing: 1px;
     }
     &--md {
         font-size: 3.2rem;
+        letter-spacing: .5px;
     }
     &--sm {
         font-size: 2rem;
         font-weight: 600;
         text-transform: none;
+        letter-spacing: .5px;
+
     }
     &--xs {
         font-size: 1.5rem;
         font-weight: 600;
         text-transform: none;
+        letter-spacing: .5px;
+
     }
 }
 
@@ -119,7 +125,7 @@ button {
 .nav-link {
     font-family: var(--font-heading);
     font-weight: 600;
-    transform: color .2s ease;
+    transition: color .2s ease;
     text-transform: uppercase;
     &:hover {
         color: var(--color-grey-dark);

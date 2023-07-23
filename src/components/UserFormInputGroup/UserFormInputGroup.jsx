@@ -4,6 +4,8 @@ import {IconInputInvisible, IconInputVisible} from "../../assets/"
 const UserFormInputGroup = ({ label, inputType, handleChange, withIcon }) => {
     const [isVisble, setIsVisible] = useState(false)
     
+    const setPasswordVisibility = () => setIsVisible(prevState => !prevState)
+
   return (
     <div className='inputGroup d--flex d--flex-col d--gap-05'>
         <label htmlFor={label}>{label}</label>
@@ -12,17 +14,13 @@ const UserFormInputGroup = ({ label, inputType, handleChange, withIcon }) => {
                 autoComplete='false'
                 type={inputType==='password' && isVisble ? 'text' : inputType} 
                 name={label}
-                id={label}
                 onChange={handleChange}
             />
 
             {withIcon && (
                 <span 
                     className="cursor--pointer" 
-                    onClick={() => {
-                        setIsVisible(prevState => !prevState)
-                        console.log(isVisble)
-                    }}
+                    onClick={setPasswordVisibility}
                     style={{ 
                         position: 'absolute', 
                         right: '1rem',
