@@ -22,7 +22,6 @@ const Hero = () => {
         </div>
         
         <div className="hero__text">
-            {/* <h1 className="heading heading--lg color--light">step into greatness unleash your potential</h1> */}
            <TextAnimated>
             <motion.h1
                 variants={textAnimationVariants}

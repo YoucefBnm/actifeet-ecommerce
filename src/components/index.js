@@ -5,7 +5,7 @@ import NavbarCartIcon from "./NavbarCartIcon/NavbarCartIcon";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
 import NavDropdownItem from "./NavDropdownItem/NavDropdownItem";
 import NavMobile from "./NavMobile/NavMobile";
-import TextAnimated from "./TextAnimated/TexxtAnimated";
+import TextAnimated from "./TextAnimated/TextAnimated";
 
 import Hero from "./Hero/Hero";
 import CustomCursor from "./CustomCursor/CustomCursor";
@@ -29,8 +29,8 @@ export {
     NavbarLinks,
     NavDropdownItem,
     Hero,
-    TextAnimated,
     CustomCursor,
+    TextAnimated,
     
     Footer,
     UserFormInputGroup,
