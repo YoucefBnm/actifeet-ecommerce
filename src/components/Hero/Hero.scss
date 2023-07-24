@@ -1,0 +1,33 @@
+@use '../../sass/mixins';
+
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - 7rem);
+    max-height: 61rem;
+    &__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6rem;
+        // width: 50%;
+        .heading {
+            width: 22ch;
+        }
+       
+        @include mixins.respond(tab-land) {
+
+            
+        }
+        @include mixins.respond(tab-port) {
+        } 
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}

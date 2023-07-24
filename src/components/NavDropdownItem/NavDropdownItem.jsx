@@ -9,7 +9,6 @@ const NavDropdownItem = ({ item }) => {
     const handleMouseIn = () => setIsMouseIn(true)
     const handleMouseOut = () => setIsMouseIn(false)
 
-
     const { route, image, title } = item
   return (
     <motion.li

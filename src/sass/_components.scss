@@ -133,3 +133,23 @@ input {
         }
     }
 }
+
+.notification {
+    display: inline-flex;
+    background-color: var(--color-danger);
+    border-radius: 50%;
+    width: 1.95rem;
+    height: 1.95rem;
+    font-size: 1.1rem;
+    letter-spacing: -.05em;
+    font-family: var(--font-exo);
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: calc(50% + .15rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

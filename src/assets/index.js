@@ -6,6 +6,8 @@ import { ReactComponent as IconCartMobile } from './icons/icon-mobile-cart.svg'
 import { ReactComponent as IconChevronRight } from './icons/chevron-right.svg'
 import { ReactComponent as IconChevronDown} from './icons/chevron-down.svg'
 import { ReactComponent as IconChevronLeft} from './icons/chevron-left.svg'
+import { ReactComponent as IconUser } from './icons/icon-user.svg'
+import { ReactComponent as IconCart } from './icons/icon-bag.svg'
 
 import { ReactComponent as Logo } from './media/logo.svg'
 import NavSportsRunImage from './media/nav-sports-run.jpg'
@@ -13,6 +15,7 @@ import NavSportsCrossImage from './media/nav-sports-cross.jpg'
 import NavSportsClimbImage from './media/nav-sports-climb.jpg'
 import NavCollectionsMenImage from './media/nav-collection-men.jpg'
 import NavCollectionsWomenImage from './media/nav-collection-women.jpg'
+import HeroImage from './media/hero-image.jpg'
 
 export {
     IconInputInvisible,
@@ -24,6 +27,8 @@ export {
     IconChevronRight,
     IconChevronDown,
     IconChevronLeft,
+    IconUser,
+    IconCart,
     
     Logo,
     NavSportsRunImage,
@@ -31,4 +36,6 @@ export {
     NavSportsClimbImage,
     NavCollectionsMenImage,
     NavCollectionsWomenImage,
+    HeroImage,
+    
 }

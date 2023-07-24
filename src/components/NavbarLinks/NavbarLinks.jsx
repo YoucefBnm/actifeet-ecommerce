@@ -25,7 +25,7 @@ const NavbarLinks = () => {
                 <li 
                   onMouseEnter={() => handleMouseEnter(navLinks[index].subMenu, index)}
                   onMouseLeave={handleMouseLeave}  
-                  className="nav__item height--100 pad--y-1" 
+                  className="nav__item height--100 pad--y-2" 
                   key={navLink.id}
                 >
                   <button className="nav-link d--flex-inline gap--05">

@@ -3,21 +3,10 @@ import {NavbarAccount, NavbarCartIcon, NavbarLogo} from '../'
 import { IconChevronLeft, IconChevronRight } from '../../assets'
 import { navMobileLinks } from '../../constants'
 import { motion } from 'framer-motion'
-
-import './NavMobile.scss'
+import { navMobileVariants } from '../../utils/motion/motion.utils'
 import { useState } from 'react'
 
-const navMobileVariants = {
-    hidden: {
-        x: '110%',
-        transition: { duration: 0.2 }
-    },
-    visible: {
-        x: 0,
-        transition: { type: "spring", stiffness: 200, damping: 30 }
-
-    }
-}
+import './NavMobile.scss'
 
 const NavMobile = () => {
       const [navLinksOpen, setNavLinksOpen] = useState(false)
@@ -37,16 +26,19 @@ const NavMobile = () => {
       }
 
   return (
-    <nav className={navLinksOpen ? 'navMobile overflow--visible' : 'navMobile overflow--hidden'}>
+    <nav 
+        className={navLinksOpen ? 'navMobile overflow--visible' : 'navMobile overflow--hidden'}
+    >
         <div className="navMobile__top d--flex d--justify-between pad--y-1 pad--x-default">
             <NavbarLogo view='mobile' />
 
-            <div className="navMobile__utils d--flex gap--2 d--align-center">
+            <div className="navMobile__utils d--flex d--align-center gap--2">
                 <NavbarAccount />
                 <NavbarCartIcon />
                 <motion.button 
                     className="navMobile__toggle d--flex d--flex-col cursor--pointer"
                     onClick={handleNavLinks}
+                    whileHover={{ opacity: .5 }}
                 >
                     <motion.span 
                         animate={ navLinksOpen ? { rotate: '-45deg', translateY: '8px'} : { rotate: 0 }}
@@ -64,7 +56,7 @@ const NavMobile = () => {
         </div>
 
         <motion.ul 
-            className="navMobile__sub d--flex d--flex-col gap--1 pad--y-2"
+            className="navMobile__sub d--flex d--flex-col gap--1 pad--y-2 overflow--hidden"
             variants={navMobileVariants}
             initial='hidden'
             animate={navLinksOpen ? 'visible' : 'hidden'}
@@ -75,7 +67,7 @@ const NavMobile = () => {
                     ? (
                         <li key={navLink.id} className='navMobile__item'>
                             <button 
-                                className='nav-link d--flex-inline gap--2'
+                                className='nav-link d--flex-inline gap--2 cursor--pointer'
                                 onClick={() => openSubMenu(index)}
                             >
                                 <span>{navLink.title}</span>

@@ -1,8 +1,12 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
+import { IconUser, IconUserMobile } from '../../assets'
 
 const NavbarAccount = () => {
+  
   return (
-    <div>user</div>
+    <Link className='d--block' to='/auth/login'>
+      <IconUser />
+    </Link>
   )
 }
 
