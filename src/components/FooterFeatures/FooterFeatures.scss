@@ -1,0 +1,7 @@
+@use '../../sass/mixins';
+
+.features {
+    @include mixins.respond(tab-port) {
+        justify-content: flex-start;
+    }
+}

@@ -1,12 +1,14 @@
 import {
-    NavSportsRunImage,
-    NavSportsCrossImage,
-    NavSportsClimbImage,
-    NavCollectionsMenImage,
-    NavCollectionsWomenImage,
     NavMenCtaSaleImage,
     NavWomenCtaSaleImage,
     NavSportsCtaSaleImage,
+    IconFooterFeaturesTruck,
+    IconFooterFeatursShield,
+    IconFooterFeaturesBox,
+    IconTwitter,
+    IconPinterest,
+    IconInsta,
+    IconFacebook,
 } from "../assets"
 
 export const defaultFormFields = {
@@ -15,71 +17,6 @@ export const defaultFormFields = {
     password: '',
     confirmPassword: ''
 }
-
-export const navLinks = [
-    {
-        id: 'navbar-shopAll-link-main',
-        title: 'Shop All',
-        route: '/shop/all_products',
-    },
-    {
-        id: 'navbar-collection-link-sub',
-        title: 'Collections',
-        subMenu: [
-            {
-                id: 'navbar-collection-submenu-men',
-                image: NavCollectionsMenImage,
-                title: 'men',
-                route: '/shop/men'
-            },
-            {
-                id: 'navbar-collection-submenu-women',
-                image: NavCollectionsWomenImage,
-                title: 'women',
-                route: '/shop/women'
-            }
-        ]
-    },
-    {
-        id: 'navbar-sports-link-sub',
-        title: 'Sports',
-        subMenu: [
-            {
-                id: 'navbar-sports-submenu-run',
-                image: NavSportsRunImage,
-                title: 'Running',
-                route: '/shop/running'
-            },
-            {
-                id: 'navbar-sports-submenu-cross',
-                image: NavSportsCrossImage,
-                title: 'Cross training',
-                route: '/shop/cross_training',
-            },
-            {
-                id: 'navbar-sports-submenu-climb',
-                image: NavSportsClimbImage,
-                title: 'climbing',
-                route: '/shop/climbing'
-            }
-        ]
-    },
-    {
-        id: 'navbar-best-seller-link-main',
-        title: 'best seller',
-        route: '/shop/best_seller',
-    },
-    {
-        id: 'navbar-new-link-main',
-        title: 'new',
-        route: '/shop/new'
-    },
-    {
-        id: 'navbar-sale-link-main',
-        title: 'sale',
-        route: '/shop/sale'
-    },
-]
 
 export const navMobileLinks = [
     {
@@ -594,3 +531,191 @@ export const navbarLinks = [
         route: '/shop/sale',
     },
 ]
+
+export const footerFeturesContent = [
+    {
+        id: 'footer-feature-fast',
+        icon: IconFooterFeaturesTruck,
+        heading: 'fast delivery',
+        text: 'delivery within 5 day work.'
+    },
+    {
+        id: 'footer-feature-secure',
+        icon: IconFooterFeatursShield,
+        heading: 'secure payment',
+        text: 'we use stripe API for transactions.'
+    },
+    {
+        id: 'footer-feature-funds',
+        icon: IconFooterFeaturesBox,
+        heading: 'funds & returns',
+        text: 'free return within 30 day.'
+    }
+]
+
+export const FooterNavLinks = {
+    navigation: [
+        {
+            id: 'footer-nav-gender',
+            title: 'shop by',
+            links: [
+                {
+                    id: 'footer-nav-link-men',
+                    title: 'men',
+                    route: '/shop/men'
+                },
+                {
+                    id: 'footer-nav-link-women',
+                    title: 'women',
+                    route: '/shop/women'
+                },
+                {
+                    id: 'footer-nav-link-unisex',
+                    title: 'unisex',
+                    route: '/shop/unisex'
+                }
+            ]
+        },
+        {
+            id: 'footer-nav-sports',
+            title: 'sports',
+            links: [
+                {
+                    id: 'footer-nav-link-running',
+                    title: 'running',
+                    route: '/shop/running'
+                },
+                {
+                    id: 'footer-nav-link-cross_training',
+                    title: 'cross training',
+                    route: '/shop/cross_training'
+                },
+                {
+                    id: 'footer-nav-link-climbing',
+                    title: 'climbing',
+                    route: '/shop/climbing'
+                },
+                {
+                    id: 'footer-nav-link-hiking',
+                    title: 'hiking',
+                    route: '/shop/hiking'
+                },
+            ]
+        },
+        {
+            id: 'footer-nav-brands',
+            title: 'brands',
+            links: [
+                {
+                    id: 'footer-nav-link-asics',
+                    title: 'asics',
+                    route: '/shop/asics'
+                },
+                {
+                    id: 'footer-nav-link-brooks',
+                    title: 'brooks',
+                    route: '/shop/brooks'
+                },
+                {
+                    id: 'footer-nav-link-columbia',
+                    title: 'columbia',
+                    route: '/shop/columbia'
+                },
+                {
+                    id: 'footer-nav-link-red_chili',
+                    title: 'red chili',
+                    route: '/shop/red_chili'
+                },
+                {
+                    id: 'footer-nav-link-salomon',
+                    title: 'salomon',
+                    route: '/shop/salomon'
+                },
+                {
+                    id: 'footer-nav-link-tenaya',
+                    title: 'tenaya',
+                    route: '/shop/tenaya'
+                },
+                {
+                    id: 'footer-nav-link-under_armour',
+                    title: 'under armour',
+                    route: '/shop/under_armour'
+                },
+                {
+                    id: 'footer-nav-link-nike',
+                    title: 'nike',
+                    route: '/shop/nike'
+                },
+            ]
+        },
+        {
+            id: 'footer-nav-collections',
+            title: 'collections',
+            links: [
+                {
+                    id: 'footer-nav-link-best_seller',
+                    title: 'best seller',
+                    route: '/shop/best_seller'
+                },
+                {
+                    id: 'footer-nav-link-limited',
+                    title: 'limited',
+                    route: '/shop/limited'
+                },
+                {
+                    id: 'footer-nav-link-new',
+                    title: 'new',
+                    route: '/shop/new'
+                },
+                {
+                    id: 'footer-nav-link-sale',
+                    title: 'sale',
+                    route: '/shop/sale'
+                },
+            ]
+        },
+        {
+            id: 'footer-nav-account',
+            title: 'account',
+            links: [
+                {
+                    id: 'footer-nav-link-login',
+                    title: 'login',
+                    route: '/auth/login'
+                },
+                {
+                    id: 'footer-nav-link-register',
+                    title: 'register',
+                    route: '/auth/register'
+                },
+                {
+                    id: 'footer-nav-link-checkout',
+                    title: 'checkout',
+                    route: '/checkout'
+                },
+            ]
+        },
+    ],
+    social: [
+        {
+            id: 'footer-nav-link-social-twitter',
+            image: IconTwitter,
+            route: 'twitter'
+        },
+        {
+            id: 'footer-nav-link-social-pinterest',
+            image: IconPinterest,
+            route: 'pinterest'
+        },
+        {
+            id: 'footer-nav-link-social-insta',
+            image: IconInsta,
+            route: 'insta'
+        },
+        {
+            id: 'footer-nav-link-social-Facebook',
+            image: IconFacebook,
+            route: 'Facebook'
+        },
+    ]
+}

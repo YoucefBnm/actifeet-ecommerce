@@ -10,6 +10,8 @@ import { ReactComponent as IconUser } from './icons/icon-user.svg'
 import { ReactComponent as IconCart } from './icons/icon-bag.svg'
 
 import { ReactComponent as Logo } from './media/logo.svg'
+import { ReactComponent as LogoLight } from './media/logo-light.svg'
+
 import NavSportsRunImage from './media/nav-sports-run.jpg'
 import NavSportsCrossImage from './media/nav-sports-cross.jpg'
 import NavSportsClimbImage from './media/nav-sports-climb.jpg'
@@ -20,6 +22,15 @@ import HeroImage from './media/hero-image.jpg'
 import NavMenCtaSaleImage from './media/nav-men-cta-sale-image.jpg'
 import NavWomenCtaSaleImage from './media/nav-women-cta-sale-image.jpg'
 import NavSportsCtaSaleImage from './media/nav-sports-cta-sale-image.jpg'
+
+import IconFooterFeaturesTruck from './icons/footer-features-icon-truck.svg'
+import IconFooterFeatursShield from './icons/footer-features-icon-shield.svg'
+import IconFooterFeaturesBox from './icons/footer-features-icon-box.svg'
+
+import IconTwitter from './icons/icon-twitter.svg'
+import IconPinterest from './icons/icon-pinterest.svg'
+import IconInsta from './icons/icon-instagram.svg'
+import IconFacebook from './icons/icon-facebook.svg'
 export {
     IconInputInvisible,
     IconInputVisible,
@@ -34,6 +45,7 @@ export {
     IconCart,
     
     Logo,
+    LogoLight,
     NavSportsRunImage,
     NavSportsCrossImage,
     NavSportsClimbImage,
@@ -43,5 +55,14 @@ export {
 
     NavWomenCtaSaleImage,
     NavMenCtaSaleImage,
-    NavSportsCtaSaleImage
+    NavSportsCtaSaleImage,
+
+    IconFooterFeaturesTruck,
+    IconFooterFeatursShield,
+    IconFooterFeaturesBox,
+
+    IconTwitter,
+    IconPinterest,
+    IconInsta,
+    IconFacebook,
 }

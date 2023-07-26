@@ -1,0 +1,33 @@
+@use '../../sass/mixins';
+
+.footerNav {
+    @include mixins.respond(tab-land) {
+        
+    }
+    @include mixins.respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    &__brand {
+        flex-basis: 20%;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    &__social {
+        flex-basis: 15%;
+    }
+    .nav-link--sub {
+        color: var(--color-grey-light);
+        &:hover {
+            color: var(--color-grey);
+        }
+    }
+    &__navigation {
+        @include mixins.respond(tab-port) {
+            flex-wrap: wrap;
+            justify-content: flex-start !important;
+        }
+    }
+}

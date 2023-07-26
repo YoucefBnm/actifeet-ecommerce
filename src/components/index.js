@@ -22,6 +22,9 @@ import ShopFiltersGroup from "./ShopFiltersGroup/ShopFiltersGroup";
 import UserFormInputGroup from "./UserFormInputGroup/UserFormInputGroup";
 import CustomBtn from "./CustomBtn/CustomBtn";
 
+import FooterFeatures from "./FooterFeatures/FooterFeatures";
+import FooterNav from "./FooterNav/FooterNav";
+
 export {
     Navbar,
     NavbarSubmenu,
@@ -45,5 +48,8 @@ export {
     ShopSort,
     ShopSearch,
     ShopNav,
-    ShopFiltersGroup
+    ShopFiltersGroup,
+
+    FooterFeatures,
+    FooterNav,
 }

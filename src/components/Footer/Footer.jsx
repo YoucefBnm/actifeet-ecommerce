@@ -1,8 +1,11 @@
-import React from 'react'
+import { FooterFeatures, FooterNav } from '../'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className="footer">
+      <FooterFeatures />
+      <FooterNav />
+    </footer>
   )
 }
 
