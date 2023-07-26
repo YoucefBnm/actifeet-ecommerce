@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { collectionReducer } from "./shopCollection/shopCollection.reducer";
+import { userReducer } from "./user/user.reducer";
 
 export const rootReducer = combineReducers({
-    shopCollection: collectionReducer,
+    user: userReducer
 })

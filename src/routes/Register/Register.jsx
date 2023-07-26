@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { CustomBtn, UserFormInputGroup } from '../../components'
 import { defaultFormFields } from '../../constants'
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils'
-
+import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.user'
 const Register = () => {
     const [formFields, setFormFields] = useState(defaultFormFields)
-    const { displayName, email, password, confirmPassword } = formFields
+    const { displayName,
+        email,
+        password,
+        confirmPassword } = formFields
 
     const [errorMessage, setErrorMessage] = useState(null)
 
@@ -24,7 +26,7 @@ const Register = () => {
             await createUserDocumentFromAuth(user, { displayName })
             resetFormFields()
         } catch (error) {
-            if(error.cod === 'auth/email-already-in-use') {
+            if(error.code === 'auth/email-already-in-use') {
                 setErrorMessage('Cannot create user, email already exists.')
             } else {
                 setErrorMessage(`user creation encounter an error: ${error}`)
@@ -39,47 +41,59 @@ const Register = () => {
     }
 
   return (
-    <div className="register d--flex d--flex-col d--justify-center d--align-center">
-        <div className="register__header mar--b-3">
+    <div className="register pad--x-default pad--y-default d--flex d--flex-col d--justify-center d--align-center">
+        <div className="register__header d--flex d--flex-col d--align-center mar--b-3">
             <h1 className="heading heading--md">create account</h1>
             {
                 errorMessage && (
-                    <p className="color--danger">{errorMessage}</p>
+                    <strong className="color--danger">{errorMessage}</strong>
                 )
             }
         </div>
         
-        <form className="register__form mar--b-3">
+        <form className="register__form mar--b-3"  onSubmit={handleSubmit}>
             <div className="register__form-inputs mar--b-2 d--flex d--flex-col gap--1">
                 <UserFormInputGroup
-                    label='user name'
-                    inputType='text'
-                    handleChange={handleChange}
+                    label='display name'
+                    name='displayName'
+                    value={displayName}
+                    onChange={handleChange}
+                    type='text'
+                    required
                 />
                 <UserFormInputGroup
                     label='email'
-                    inputType='email'
-                    handleChange={handleChange}
+                    name='email'
+                    value={email}
+                    onChange={handleChange}
+                    type='email'
+                    required
                 />
                 <UserFormInputGroup
                     label='password'
-                    inputType='password'
-                    handleChange={handleChange}
                     withIcon={true}
+                    name='password'
+                    type='password'
+                    onChange={handleChange}
+                    required
+                    value={password}
                 />
                 <UserFormInputGroup
                     label='confirm password'
-                    inputType='password'
-                    handleChange={handleChange}
                     withIcon={true}
+                    name='confirmPassword'
+                    type='password'
+                    onChange={handleChange}
+                    required
+                    value={confirmPassword}
                 />
             </div>
 
             <div className='login__form-btns d--flex gap--1'>
                 <CustomBtn
                     btnStlye='bg customBtn--bg--dark width--100'
-                    text='login'
-                    handleClick={() => {}}
+                    text='Sign Up'
+                    btnType='submit'
                 />
 
             </div>
@@ -92,7 +106,7 @@ const Register = () => {
             <CustomBtn
                 btnStlye='link customBtn--link--primary'
                 text='login'
-                route='/login'
+                route='/auth/login'
             />
         </div>
     </div>

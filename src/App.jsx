@@ -1,4 +1,4 @@
-import { Navbar, Footer, NavMobile } from './components'
+import { Navbar, Footer } from './components'
 import { Routes, Route } from 'react-router-dom'
 import { Home, Login, Register, Shop } from './routes'
 import './sass/App.scss'
@@ -9,14 +9,12 @@ function App() {
 
   return (
     <>
-      {
-        currentWindowWidth.current > 880
-        ? <Navbar />
-        : <NavMobile />
-      }
+      <Navbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route path='/shop/*' element={<Shop />} />
+        <Route path='/auth' element={<Login />} />
+        <Route path='/auth/login' element={<Login />} />
+        <Route path='/auth/register' element={<Register />} />
       </Routes>
       <Footer />
     </>

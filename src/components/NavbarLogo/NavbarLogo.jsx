@@ -3,7 +3,7 @@ import { Logo, LogoMobile } from '../../assets'
 
 const NavbarLogo = ({ view }) => {
   return (
-    <div className="nav__logo nav__item">
+    <div className="navLogo d--flex d--align-center">
         <Link to='/' className='d--block'>
             {
               view==='mobile'

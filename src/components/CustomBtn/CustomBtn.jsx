@@ -1,12 +1,22 @@
 import { Link } from 'react-router-dom'
 
-const CustomBtn = ({ route,btnStlye, text, handleClick }) => {
+const CustomBtn = ({ route,btnStlye, btnType, text, handleClick }) => {
   return (
-    <div className={`customBtn customBtn--${btnStlye} cursor--pointer`} onClick={handleClick}>
-        <Link to={route}>
-            {text}
-        </Link>
-    </div>
+    <button 
+      className={`customBtn customBtn--${btnStlye} cursor--pointer`} 
+      onClick={handleClick}
+      type={btnType}
+    >
+        {
+          route
+          ? (
+            <Link to={route}>
+              {text}
+            </Link>
+          )
+          : (<span>{text}</span>)
+        }
+    </button>
   )
 }
 

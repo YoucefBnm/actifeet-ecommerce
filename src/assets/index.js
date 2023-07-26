@@ -17,6 +17,9 @@ import NavCollectionsMenImage from './media/nav-collection-men.jpg'
 import NavCollectionsWomenImage from './media/nav-collection-women.jpg'
 import HeroImage from './media/hero-image.jpg'
 
+import NavMenCtaSaleImage from './media/nav-men-cta-sale-image.jpg'
+import NavWomenCtaSaleImage from './media/nav-women-cta-sale-image.jpg'
+import NavSportsCtaSaleImage from './media/nav-sports-cta-sale-image.jpg'
 export {
     IconInputInvisible,
     IconInputVisible,
@@ -37,5 +40,8 @@ export {
     NavCollectionsMenImage,
     NavCollectionsWomenImage,
     HeroImage,
-    
+
+    NavWomenCtaSaleImage,
+    NavMenCtaSaleImage,
+    NavSportsCtaSaleImage
 }

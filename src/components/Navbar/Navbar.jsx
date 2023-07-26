@@ -14,7 +14,7 @@ const Navbar = () => {
 
       <NavbarLinks />
       
-      <div className="nav__utils d--flex d--justify-end pad--y-2 d--align-center gap--2">
+      <div className="nav__utils d--flex d--justify-end pad--y-1 d--align-center gap--2">
         <NavbarAccount />
         <NavbarCartIcon />
       </div>

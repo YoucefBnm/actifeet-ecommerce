@@ -1,6 +1,5 @@
 export const fadeEffect = {
     hidden: { opacity: 0 },
-    
     visible: { opacity: 1 }
 }
 
@@ -19,8 +18,8 @@ export const heightAnimationVariants = {
             stiffness: 300,
             damping: 35,
             delay: .3,
-            staggerChildren: .3,
-            delayChildren: .6
+            staggerChildren: .2,
+            delayChildren: .4
         }
     }
 }

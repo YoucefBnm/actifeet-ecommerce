@@ -1,20 +1,20 @@
 import { useState } from "react"
 import {IconInputInvisible, IconInputVisible} from "../../assets/"
 
-const UserFormInputGroup = ({ label, inputType, handleChange, withIcon }) => {
+const UserFormInputGroup = ({ label, withIcon, type, ...otherProps }) => {
     const [isVisble, setIsVisible] = useState(false)
     
     const setPasswordVisibility = () => setIsVisible(prevState => !prevState)
 
   return (
     <div className='inputGroup d--flex d--flex-col d--gap-05'>
-        <label htmlFor={label}>{label}</label>
+        {label && <label htmlFor={label}>{label}</label>}
+
         <div className="inputGroup__input pos--relative">
             <input 
                 autoComplete='false'
-                type={inputType==='password' && isVisble ? 'text' : inputType} 
-                name={label}
-                onChange={handleChange}
+                type={type==='password' && isVisble ? 'text' : type} 
+                {...otherProps}
             />
 
             {withIcon && (

@@ -153,3 +153,10 @@
         cursor: pointer;
     }
 }
+
+.index {
+
+    &--99 {
+        z-index: 999;
+    }
+}

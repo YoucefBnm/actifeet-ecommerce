@@ -3,9 +3,11 @@ import NavbarLogo from "./NavbarLogo/NavbarLogo";
 import NavbarAccount from "./NavbarAccount/NavbarAccount";
 import NavbarCartIcon from "./NavbarCartIcon/NavbarCartIcon";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
-import NavDropdownItem from "./NavDropdownItem/NavDropdownItem";
 import NavMobile from "./NavMobile/NavMobile";
+
+import NavAccountSignout from "./NavAccountSignout/NavAccountSignout";
 import TextAnimated from "./TextAnimated/TextAnimated";
+import NavbarSubmenu from "./NavbarSubmenu/NavbarSubmenu";
 
 import Hero from "./Hero/Hero";
 import CustomCursor from "./CustomCursor/CustomCursor";
@@ -22,12 +24,14 @@ import CustomBtn from "./CustomBtn/CustomBtn";
 
 export {
     Navbar,
+    NavbarSubmenu,
+    
     NavMobile,
     NavbarLogo,
+    NavAccountSignout,
     NavbarAccount,
     NavbarCartIcon,
     NavbarLinks,
-    NavDropdownItem,
     Hero,
     CustomCursor,
     TextAnimated,
