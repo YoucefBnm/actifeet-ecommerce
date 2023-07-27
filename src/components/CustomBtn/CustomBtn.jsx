@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
+import './CustomBtn.scss'
 
 const CustomBtn = ({ route,btnStlye, btnType, text, handleClick }) => {
   return (
     <button 
-      className={`customBtn customBtn--${btnStlye} cursor--pointer`} 
+      className={`customBtn ${btnStlye}`} 
       onClick={handleClick}
       type={btnType}
     >

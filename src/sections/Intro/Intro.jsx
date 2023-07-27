@@ -34,12 +34,18 @@ const Intro = () => {
                     Explore our collectons and find the ideal shoes to unlock your full potential
                 </motion.p>
 
-                <CustomBtn
-                    route='/shop/all_products'
-                    btnType='button'
-                    text='shop now'
-                    btnStlye='customBtn customBtn--bg customBtn--bg--primary mar--t-2'
-                />
+                <motion.div 
+                    className="mar--t-2"
+                    variants={textAnimationVariants}
+                >
+                    <CustomBtn
+                        variants={textAnimationVariants}
+                        route='/shop/all_products'
+                        btnType='button'
+                        text='shop now'
+                        btnStlye='customBtn__bg customBtn__bg--primary'
+                    />
+                </motion.div>
             </TextAnimated>
                 
         </div>

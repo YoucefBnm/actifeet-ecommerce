@@ -36,13 +36,13 @@ const Hero = () => {
                     route='/shop/men'
                     btnType='button'
                     text='shop men'
-                    btnStlye='customBtn customBtn--bg customBtn--bg--white'
+                    btnStlye='customBtn__bg customBtn__bg--light'
                 />
                 <CustomBtn
                     route='/shop/women'
                     btnType='button'
                     text='shop women'
-                    btnStlye='customBtn customBtn--bg customBtn--bg--dark'
+                    btnStlye='customBtn__bg customBtn__bg--light'
                 />
         </motion.div>
            </TextAnimated>
