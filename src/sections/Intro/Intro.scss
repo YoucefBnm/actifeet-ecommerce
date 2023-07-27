@@ -1,0 +1,12 @@
+@use '../../sass/mixins';
+.intro {
+    
+    &__col {
+        @include mixins.respond(tab-port) {
+            width: 75% !important;
+        }
+        @include mixins.respond(phone) {
+        
+        }
+    }
+}

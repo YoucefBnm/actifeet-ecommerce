@@ -3,7 +3,7 @@ import {
   NavbarLinks, 
   NavbarAccount, 
   NavbarCartIcon 
-} from '../'
+} from '../../components'
 import './Navbar.scss'
 
 const Navbar = () => {

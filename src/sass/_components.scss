@@ -62,7 +62,7 @@ input {
     &--shadow {
         min-width: 17.8rem;
         max-width: 47.7rem;
-        padding: 1.3rem 0;
+        padding: 1.5rem 0;
         text-align: center;
     }
     &--bg {
@@ -73,6 +73,22 @@ input {
             &:hover {
                 box-shadow: var(--shadow-xs);
                 background-color: lighten($color: #000000, $amount: 25);
+            }
+        }
+        &--white {
+            background-color: #fff;
+            color: #000;
+            &:hover {
+                box-shadow: var(--shadow-xs);
+                background-color: darken($color: #fff, $amount: 25);
+            }
+        }
+        &--primary {
+            background-color: var(--color-primary);
+            color: #fff;
+            &:hover {
+                box-shadow: var(--shadow-xs);
+                background-color: darken($color: #1A2EE0, $amount: 25);
             }
         }
     }

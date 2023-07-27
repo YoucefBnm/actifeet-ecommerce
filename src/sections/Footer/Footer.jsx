@@ -1,4 +1,4 @@
-import { FooterFeatures, FooterNav } from '../'
+import { FooterFeatures, FooterNav } from '../../components'
 
 const Footer = () => {
   return (

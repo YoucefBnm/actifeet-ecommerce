@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import {NavbarAccount, NavbarCartIcon, NavbarLogo} from '../'
+import {NavbarAccount, NavbarCartIcon, NavbarLogo} from '../../components'
 import { IconChevronLeft, IconChevronRight } from '../../assets'
 import { navMobileLinks } from '../../constants'
 import { motion } from 'framer-motion'

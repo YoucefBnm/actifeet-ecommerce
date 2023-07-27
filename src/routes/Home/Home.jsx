@@ -1,4 +1,4 @@
-import { Hero } from '../../components'
+import { Hero, Intro } from '../../sections'
 
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Intro />
     </>
   )
 }

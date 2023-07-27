@@ -1,22 +1,13 @@
 import { HeroImage } from '../../assets'
-import { Link } from 'react-router-dom'
-import { CustomCursor, TextAnimated } from '../'
+import { CustomBtn, TextAnimated } from '../../components'
 import { motion } from 'framer-motion'
 import './Hero.scss'
 import { textAnimationVariants } from '../../utils/motion/motion.utils'
 
 const Hero = () => {
+
   return (
     <section className="hero">
-
-        <CustomCursor>
-            <Link 
-                to='/shop/all_products' 
-                className='nav-link color--light width--100 height--100 d--flex d--justify-center d--align-center'
-            >
-                Shop
-            </Link>
-        </CustomCursor>
         <div className="hero__bg">
             <img className='width--100 height--100' src={HeroImage} alt='man & woman in athletic shoes' />
         </div>
@@ -36,8 +27,28 @@ const Hero = () => {
             >
                 unleash your potential
             </motion.h1>
+
+            <motion.div 
+                className="hero__btns d--flex gap--2 mar--t-3"
+                variants={textAnimationVariants}
+            >
+                <CustomBtn
+                    route='/shop/men'
+                    btnType='button'
+                    text='shop men'
+                    btnStlye='customBtn customBtn--bg customBtn--bg--white'
+                />
+                <CustomBtn
+                    route='/shop/women'
+                    btnType='button'
+                    text='shop women'
+                    btnStlye='customBtn customBtn--bg customBtn--bg--dark'
+                />
+        </motion.div>
            </TextAnimated>
         </div>
+
+        
     </section>
   )
 }
