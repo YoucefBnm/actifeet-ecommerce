@@ -18,6 +18,7 @@ import CustomBtn from "./CustomBtn/CustomBtn";
 
 import FooterFeatures from "./FooterFeatures/FooterFeatures";
 import FooterNav from "./FooterNav/FooterNav";
+import CarouselContainer from "./CarouselContainer/CarouselContainer";
 
 export {
     NavbarSubmenu,
@@ -28,7 +29,7 @@ export {
     NavbarCartIcon,
     NavbarLinks,
     TextAnimated,
-    
+    CarouselContainer,
     UserFormInputGroup,
     CustomBtn,
     

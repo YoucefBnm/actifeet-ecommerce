@@ -1,0 +1,55 @@
+@use '../../sass/mixins';
+
+.carousel {
+    @include mixins.respond(phone) {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 2rem !important;
+        
+    }
+
+    padding-left: 6rem;
+    .swiper {
+        width: 70%;
+        padding-right: 2rem;
+        @include mixins.respond(phone) {
+            
+            width: 100%;
+        }
+    }
+    .productCard {
+        user-select: none;
+    }
+    .swiper-slide {
+        padding-bottom: 4rem;
+    }
+    .swiper-scrollbar {
+        background-color: var(--color-grey-light);
+        height: 5px !important;
+    }
+    .swiper-scrollbar-drag {
+        background-color: #707070;
+    }
+
+    .swiper-button-disabled {
+        border: 1px solid var(--color-grey-light);
+        background-color: var(--color-grey-light);
+    }
+    &__btn {
+        width: 3.2rem;
+        height: 3.2rem;
+        cursor: pointer;
+        border: 1px solid var(--color-grey-dark);
+        background-color: #707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            width: 2rem;
+            height: 2rem;
+            
+        }
+
+    }
+}

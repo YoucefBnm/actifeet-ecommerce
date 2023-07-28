@@ -34,48 +34,37 @@ export const ALL_PRODUCTS = [
         ]
     },
     {
-        id: 66,
-        gender: 'women',
+        id: 101,
+        gender: 'men',
         category: 'running',
         brand: 'brooks',
-        name: "Brooks Women’s Launch 10 Neutral Running Shoe",
-        price: 158.84,
+        name: "Brooks Men's Hyperion Tempo Road Running Shoe",
+        price: 145,
         badges: ['best seller'],
         colors: [
             {
-                id: '66a',
-                color: 'black',
+                id: '101a',
+                color: 'darkorange',
                 images: [
-                    'https://m.media-amazon.com/images/I/819Y7ODBNdL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81By-nBEVJL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81odJIQV8kL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81VZLVN5d3L._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/81+ZlaxoDcL._AC_UY695_.jpg',
-                    'https://m.media-amazon.com/images/I/71IowKj-EpL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81gwJjH+E9L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81qUZje21hL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81bni+CMdkL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81YvkP0PqbL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81fwve+wRqL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81Xhljivs7L._AC_UY695_.jpg'
                 ]
-            },
-            {
-                id: '66b',
-                color: 'dodgerblue',
-                images: [
-                    'https://m.media-amazon.com/images/I/81S7zBJ8r2L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/914FtfKIV0L._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81dRS5nYJXL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81lIyr7F3oL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/81JUYho-xmL._AC_SY695._SX._UX._SY._UY_.jpg',
-                    'https://m.media-amazon.com/images/I/71UB4Pw7s-L._AC_SY695._SX._UX._SY._UY_.jpg',
-                ]
-            },
+            }
         ],
-        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5],
+        sizes: [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,14,15],
         details: [
-            "Made in the USA or Imported",
+            "Imported",
             "Rubber sole",
-            "THIS WOMEN’S SHOE IS FOR: The Launch 10 is for runners who need a shoe that will offer dependable speed for all types of workouts and even races.",
-            "QUICK, SMOOTH TRANSITIONS: Our outsole is shaped to encourage transitions from heel to toe for an efficient toe-off.",
-            "SOFT, LIGHTWEIGHT CUSHIONING: Lightweight DNA cushioning is soft and responsive and adapts to each runner’s unique weight and stride for a fast experience.",
-            "PERFORMANCE FIT: An updated upper to deliver a locked-down fit that will hold your foot securely in place during fast workouts and races.",
-            "BREATHABLE UPPER: New engineered warp knit upper provides targeted breathability."
+            "Shaft measures approximately Alla caviglia from arch",
+            "THIS MEN'S SHOE IS FOR: For runners looking to get the most out of their workouts, the Hyperion Tempo is a light and responsive trainer that reduces deviation, allowing you to run and recover faster",
+            "LIGHT, RESPONSIVE CUSHIONING: We created the all-new DNA FLASH midsole by infusing our adaptive DNA material with nitrogen, providing an incredibly lightweight yet springy experience.",
+            "PERFORMANCE FIT: The woven upper moves with your foot and provides both stretch and breathability for maximum comfort.",
+            "ENERGY SAVINGS: The shoe geometries keep your foot stable as you move, allowing you to run efficiently in your natural motion path.",
+            "QUICK RECOVERY: Get back to the grind and focus on your progress with Hyperion Tempo's impact-absorbing, lightweight, responsive and soft cushioning.",
         ]
     },
     {
@@ -2977,6 +2966,51 @@ export const ALL_PRODUCTS = [
             "COMFORABLE, SECURE FIT: The 3D Fit Print and air-mesh provide extra structure to hold your foot in place while also providing optimum airflow.",
             "SMOOTH TRANSITIONS: The segmented crash pad cushions your landing and creates a soft, seamless heel-to-toe transition from take-off to landing.",
             "BREATHABLE UPPER: New, engineered air-mesh upper offers more breathability to keep runners dry and comfortable.",
+        ]
+    },
+    {
+        id: 66,
+        gender: 'women',
+        category: 'running',
+        brand: 'brooks',
+        name: "Brooks Women’s Launch 10 Neutral Running Shoe",
+        price: 158.84,
+        badges: ['best seller'],
+        colors: [
+            {
+                id: '66a',
+                color: 'black',
+                images: [
+                    'https://m.media-amazon.com/images/I/819Y7ODBNdL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81By-nBEVJL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81odJIQV8kL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81VZLVN5d3L._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/81+ZlaxoDcL._AC_UY695_.jpg',
+                    'https://m.media-amazon.com/images/I/71IowKj-EpL._AC_UY695_.jpg',
+                ]
+            },
+            {
+                id: '66b',
+                color: 'dodgerblue',
+                images: [
+                    'https://m.media-amazon.com/images/I/81S7zBJ8r2L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/914FtfKIV0L._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81dRS5nYJXL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81lIyr7F3oL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/81JUYho-xmL._AC_SY695._SX._UX._SY._UY_.jpg',
+                    'https://m.media-amazon.com/images/I/71UB4Pw7s-L._AC_SY695._SX._UX._SY._UY_.jpg',
+                ]
+            },
+        ],
+        sizes: [5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5],
+        details: [
+            "Made in the USA or Imported",
+            "Rubber sole",
+            "THIS WOMEN’S SHOE IS FOR: The Launch 10 is for runners who need a shoe that will offer dependable speed for all types of workouts and even races.",
+            "QUICK, SMOOTH TRANSITIONS: Our outsole is shaped to encourage transitions from heel to toe for an efficient toe-off.",
+            "SOFT, LIGHTWEIGHT CUSHIONING: Lightweight DNA cushioning is soft and responsive and adapts to each runner’s unique weight and stride for a fast experience.",
+            "PERFORMANCE FIT: An updated upper to deliver a locked-down fit that will hold your foot securely in place during fast workouts and races.",
+            "BREATHABLE UPPER: New engineered warp knit upper provides targeted breathability."
         ]
     },
     {

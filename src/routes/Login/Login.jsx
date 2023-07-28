@@ -2,7 +2,6 @@ import { useState } from "react"
 import { CustomBtn, UserFormInputGroup } from "../../components"
 import { defaultFormFields } from "../../constants"
 
-import { signinAuthUserWithEmailAndPassword, signinWithGooglePopup } from "../../utils/firebase/firebase.user"
 import { useDispatch } from "react-redux"
 import { setCurrentUser } from "../../store/user/user.action"
 
@@ -10,44 +9,6 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState(null)
     const [formFields, setFormFields] = useState(defaultFormFields)
 
-    const { email, password } = formFields
-
-    const dispatch = useDispatch()
-
-    const resetFormFields = () => setFormFields(defaultFormFields)
-
-    const signinWithGoogle = async () => {
-        const { user } = await signinWithGooglePopup()
-        
-    }
-
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        
-        try {
-            const { user } = await signinAuthUserWithEmailAndPassword(email, password)
-            resetFormFields()
-            
-            dispatch(setCurrentUser(user))
-        } catch(error) {
-            switch(error.code) {
-                case 'auth/wrong-password':
-                    setErrorMessage('incorrect password !!')
-                    break
-                case 'auth/user-not-found':
-                    setErrorMessage('there is no user with this email !!')
-                    break
-                default:
-                    setErrorMessage(error)
-            }
-        }
-    }
-
-    const handleChange = event => {
-        const { name, value } = event.target;
-
-        setFormFields({ ...formFields, [name]: value });
-    }
   return (
     <main className="login d--flex d--flex-col d--justify-center d--align-center pad--x-default pad--y-default">
         <div className="login__header d--flex d--flex-col d--align-center mar--b-3">

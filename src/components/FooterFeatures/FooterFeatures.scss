@@ -2,6 +2,10 @@
 
 .features {
     @include mixins.respond(tab-port) {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
+    }
+
+    .heading {
+        text-transform: uppercase;
     }
 }

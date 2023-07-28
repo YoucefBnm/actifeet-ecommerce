@@ -5,7 +5,6 @@ import './ShopCollection.scss'
 const ShopCollection = () => {
     const { collection, subCollection } = useParams()
     
-    console.log(subCollection, 'sub')
   return (
    <main className="shop">
     {collection}
