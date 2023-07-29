@@ -22,7 +22,7 @@ const NavbarLinks = () => {
             ? (
               <motion.li 
                 key={id}
-                className="navLinks__item pad--y-1 height--100 d--flex d-align-center"
+                className="navLinks__item pad--y-2 height--100 d--flex d-align-center"
                 onMouseEnter={() => openSubmenu(index)}
                 onMouseLeave={closeSubmenu}
               >
@@ -42,7 +42,7 @@ const NavbarLinks = () => {
             : (
               <li 
                 key={id}
-                className="navLinks__item pad--y-1 height--100 d--flex d--align-center"
+                className="navLinks__item pad--y-2 height--100 d--flex d--align-center"
               >
                 <Link
                   to={route}

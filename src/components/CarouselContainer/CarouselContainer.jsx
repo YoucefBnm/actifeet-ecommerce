@@ -1,5 +1,4 @@
-import ProductCard from "../ProductCard/ProductCard"
-import { Swiper, SwiperSlide} from "swiper/react"
+import { Swiper, SwiperSlide, useSwiper} from "swiper/react"
 import { motion } from "framer-motion"
 import TextAnimated from "../TextAnimated/TextAnimated"
 import { textAnimationVariants } from "../../utils/motion/motion.utils"
@@ -9,52 +8,98 @@ import 'swiper/css'
 import 'swiper/css/scrollbar'
 import 'swiper/css/navigation'
 import './CarouselContainer.scss'
+import { Keyboard, Mousewheel, Navigation, Scrollbar } from "swiper/modules"
+import { useCallback, useRef, useState } from "react"
 
-const CarouselContainer = ( { items,heading, paragraph, route, swiperSettings, modules }) => {
+const CarouselContainer = ( { heading, paragraph, route, items, Item, swiperSettings }) => {
+    const sliderRef = useRef(null)
 
+    const navigationPrevRef = useRef(null)
+    const navigationNextRef = useRef(null)
+    
+    // const [_, setInit] = useState();
+
+    const handleNext = useCallback(() => {
+        if(!sliderRef.current) return
+        sliderRef.current.swiper.slideNext()
+    })
+
+
+    const handlePrev = useCallback(() => {
+        if(!sliderRef.current) return
+        sliderRef.current.swiper.slidePrev()
+    })
     return (
-        <section className="carousel d--flex gap--4 pad--y-default">
-            <div className="carousel__text">
+        <div className="carousel d--flex gap--4 pad--y-default">
+            <div className="carousel__text d--flex d--flex-col gap--4">
                 <TextAnimated>
-                    <motion.h2 variants={textAnimationVariants} className="heading heading--md mar--b-2">{heading}</motion.h2>
-                    <motion.p variants={textAnimationVariants} className='mar--b-1'>{paragraph}</motion.p>
-                    <motion.div variants={textAnimationVariants} >
-                    <CustomBtn
-                        btnStlye='customBtn__link customBtn__link--primary mar--b-4'
-                        route={route}
-                        text='Shop Collection'
-                    />
-                    </motion.div>
+                    <motion.h2 
+                        className="heading heading--md mar--b-2"
+                        variants={textAnimationVariants}
+                    >
+                        {heading}
+                    </motion.h2>
+                    <motion.p 
+                        variants={textAnimationVariants}
+                    >
+                        {paragraph}
+                    </motion.p>
+                    {
+                        route &&(
+                            <motion.div variants={textAnimationVariants}>
+                                <CustomBtn
+                                    btnStlye='customBtn customBtn__link customBtn__link--primary'
+                                    text='shop collection'
+                                    route={route}
+                                    btnType='button'
+                                />
+                            </motion.div>
+                        )
+                    }
                 </TextAnimated>
-
-                <div className="carousel__control d--flex gap--1">
-                    <button className="carousel__btn carousel__btn--prev">
-                        <IconChevronLeft />
+                
+                <div className="carousel__btns d--flex gap--1">
+                    <button 
+                        className="carousel__btn carousel__btn--prev"
+                        ref={navigationPrevRef}
+                        onClick={handlePrev}
+                    >
+                        <span><IconChevronLeft /></span>
                     </button>
-                    <button className="carousel__btn carousel__btn--next">
-                        <IconChevronRight />
+                    <button 
+                        className="carousel__btn carousel__btn--prev"
+                        ref={navigationNextRef}
+                        onClick={handleNext}
+                    >
+                        <span><IconChevronRight /></span>
                     </button>
                 </div>
+
             </div>
             <Swiper 
-                className='mySwiper'
-                modules={modules}
+                ref={sliderRef}
+                modules={[Keyboard, Scrollbar, Navigation, Mousewheel]}
                 navigation={{
-                    nextEl: '.carousel__btn--next',
-                    prevEl: '.carousel__btn--prev'
+                    prevEl: navigationNextRef.current,
+                    nextEl: navigationNextRef.current
                 }}
+                onBeforeInit={(swiper) => {
+                    swiper.navigation.nextEl = navigationNextRef.current;
+                    swiper.navigation.prevEl = navigationPrevRef.current;
+                }}
+          
+                // onInit={() => setInit(true)}
                 {...swiperSettings}
-                
             >
                 {
                     items.map(item => (
                         <SwiperSlide key={item.id} >
-                            <ProductCard product={item} />
+                            <Item item={item} />
                         </SwiperSlide>
                     ))
                 }
             </Swiper>
-        </section>
+        </div>
     )
 }
 

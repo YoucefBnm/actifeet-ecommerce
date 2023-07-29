@@ -3,8 +3,8 @@ import { motion, LayoutGroup } from 'framer-motion'
 import { fadeEffect } from '../../utils/motion/motion.utils'
 import './ProductCard.scss'
 
-const ProductCard = ({ product }) => {
-    const { gender, category, brand, name, price, badges, discount, colors } = product
+const ProductCard = ({ item }) => {
+    const { gender, category, brand, name, price, badges, discount, colors } = item
 
     const [activeColor, setActiveColor] = useState(0)
     const [activeImage, setActiveImage] = useState(0)

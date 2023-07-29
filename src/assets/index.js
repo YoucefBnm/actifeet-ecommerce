@@ -31,6 +31,13 @@ import IconTwitter from './icons/icon-twitter.svg'
 import IconPinterest from './icons/icon-pinterest.svg'
 import IconInsta from './icons/icon-instagram.svg'
 import IconFacebook from './icons/icon-facebook.svg'
+
+import CategoryClimbImage from './media/category-image-climb.jpeg'
+import CategoryCrossImage from './media/category-image-cross.jpeg'
+import CategoryRunImage from './media/category-image-run.png'
+import CategoryMenImage from './media/category-image-men.jpeg'
+import CategoryWomenImage from './media/category-image-women.jpeg'
+
 export {
     IconInputInvisible,
     IconInputVisible,
@@ -65,4 +72,10 @@ export {
     IconPinterest,
     IconInsta,
     IconFacebook,
+
+    CategoryClimbImage,
+    CategoryCrossImage,
+    CategoryRunImage,
+    CategoryMenImage,
+    CategoryWomenImage,
 }

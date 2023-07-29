@@ -3,6 +3,7 @@ import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import NavMobile from "./NavMobile/NavMobile";
 import Intro from "./Intro/Intro";
+import Categories from "./Categories/Categories";
 
 export {
     Footer,
@@ -10,5 +11,5 @@ export {
     NavMobile,
     Hero,
     Intro,
-    
+    Categories
 }

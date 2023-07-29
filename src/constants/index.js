@@ -9,6 +9,11 @@ import {
     IconPinterest,
     IconInsta,
     IconFacebook,
+    CategoryMenImage,
+    CategoryWomenImage,
+    CategoryCrossImage,
+    CategoryClimbImage,
+    CategoryRunImage,
 } from "../assets"
 
 export const defaultFormFields = {
@@ -719,3 +724,36 @@ export const FooterNavLinks = {
         },
     ]
 }
+
+export const categoriesItems = [
+    {
+        id: 'category-item-men',
+        title: 'men',
+        route: '/shop/men',
+        image: CategoryMenImage
+    },
+    {
+        id: 'category-item-women',
+        title: 'women',
+        route: '/shop/women',
+        image: CategoryWomenImage
+    },
+    {
+        id: 'category-item-running',
+        title: 'running',
+        route: '/shop/running',
+        image: CategoryRunImage
+    },
+    {
+        id: 'category-item-cross_training',
+        title: 'cross_training',
+        route: '/shop/cross_training',
+        image: CategoryCrossImage
+    },
+    {
+        id: 'category-item-calimbing',
+        title: 'calimbing',
+        route: '/shop/calimbing',
+        image: CategoryClimbImage
+    }
+]

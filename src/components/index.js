@@ -19,10 +19,12 @@ import CustomBtn from "./CustomBtn/CustomBtn";
 import FooterFeatures from "./FooterFeatures/FooterFeatures";
 import FooterNav from "./FooterNav/FooterNav";
 import CarouselContainer from "./CarouselContainer/CarouselContainer";
+import CategoryItem from "./CarouselContainer/CategoryItem/CategoryItem";
+import BestSellers from "./BestSellers/BestSellers";
 
 export {
     NavbarSubmenu,
-    
+    CategoryItem,
     NavbarLogo,
     NavAccountSignout,
     NavbarAccount,
@@ -42,4 +44,5 @@ export {
 
     FooterFeatures,
     FooterNav,
+    BestSellers
 }
