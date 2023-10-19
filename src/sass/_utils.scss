@@ -1,0 +1,81 @@
+@use './var';
+@use './mixins';
+
+.overflow {
+    &--hidden { overflow: hidden;}
+}
+
+.pos {
+    &--relative { position: relative;}
+    &--absolute { position: absolute;}
+    &--sticky {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+}
+
+.gap {
+    &--05 { gap: .5rem;}
+    &--1 { gap: 1rem;}
+    &--2 { gap: 2rem;}
+    &--4 { gap: 4rem; }
+}
+
+.pad {
+    &--x-default {
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+        @include mixins.respond(big-desktop) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+        @include mixins.respond(tab-port) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        @include mixins.respond(phone) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    &--b-default {
+        padding-bottom: 5rem;
+    }
+}
+
+.mar {
+    &--auto { margin: 0 auto; }
+    &--t-2 { margin-top: 2rem; }
+    &--t-4 { margin-top: 4rem; }
+    &--b-1 { margin-bottom: 1rem; }
+    &--b-2 { margin-bottom: 2rem; }
+    &--b-4 { margin-bottom: 4rem;}
+
+}
+
+.text {
+    &--center { text-align: center;}
+}
+
+.width {
+    &--100 { width: 100%; }
+    &--75 { width: 75%; }
+    &--50 { width: 50%; }
+}
+
+.height {
+    &--100 { height: 100%; }
+}
+
+.index {
+    &--9 { z-index: 999; }
+    &--2 { z-index: 2; }
+    &--before { z-index: -1; }
+}
+
+.cursor {
+    &--pointer { cursor: pointer; }
+}

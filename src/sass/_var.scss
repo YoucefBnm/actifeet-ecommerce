@@ -1,0 +1,31 @@
+$color-primary: #000;
+$color-grey: #707070;
+$color-grey-light: #A9A9A9;
+$color-danger: #f44067;
+$color-info: #113d9c;
+
+$overlay-primary-3: rgba($color-primary, .3);
+$overlay-primary-03: rgba($color-primary, .03);
+
+$box-shadow-100: 0 6px 6px 0 rgba($color-primary, .1);
+$box-shadow-200: 0 12px 12px 0 rgba($color-primary, .1);
+$box-shadow-300: 0 24px 24px 0 rgba($color-primary, .1);
+$box-shadow-400: 0 48px 48px 0 rgba($color-primary, .1);
+$box-shadow-color: inset 1px 1px 1px rgba($color-grey, .7);
+
+$font-heading: 'Exo', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+/*
+    full width: 1440
+    main:
+    col-hero,cta: 470
+    intro: 920
+    col-category: 410
+    col-category-text: 470
+
+
+    sub:
+    category-card: 255 
+    product-card: 300
+*/

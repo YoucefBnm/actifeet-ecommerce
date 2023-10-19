@@ -1,0 +1,50 @@
+@use './mixins';
+
+.container {
+    width: 100%;
+    &--xl {
+        // for intro: 920
+        margin: 0 auto;
+        width: 81.7rem;
+        @include mixins.respond(big-desktop) {
+            width: 92rem;
+        }
+    }
+    &--md {
+        // for hero,cta text: 470
+        width: 41.7rem;
+        @include mixins.respond(big-desktop) {
+            width: 47rem;
+        }
+    }
+    &--sm {
+        // for category image: 410
+        width: 36.4rem;
+        @include mixins.respond(big-desktop) {
+            width: 41rem;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    
+    &--inline { display: inline-flex; }
+    &--col { flex-direction: column; }
+    &--justify-center { justify-content: center; }
+    &--justify-start { justify-content: flex-start;}
+    &--justify-end { justify-content: flex-end; }
+    &--justify-between { justify-content: space-between; }
+
+    &--align-center { align-items: center; }
+    &--align-end { align-items: flex-end; }
+    &--align-start { align-items: flex-start }
+    &--align-base { align-items: baseline ;}
+
+    &--wrap { flex-wrap: wrap; }
+
+}
+
+.block { display: block; }
+.inline { display: inline-block; }
+

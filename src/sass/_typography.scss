@@ -1,0 +1,75 @@
+@use './var';
+@use './mixins';
+
+.display {
+    font-family: var.$font-heading;
+    font-weight: 600;
+    &--1 {
+        font-size: 6.8rem;
+        @include mixins.respond(big-desktop) {
+            font-size: 7.7rem;
+        }
+        @include mixins.respond(phone) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &--2 {
+        font-size: 4.2rem;
+        @include mixins.respond(phone) {
+            font-size: 2.8rem;
+        }
+    }
+    &--3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    &--4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    &--title {
+        font-size: 1.4rem;
+        line-height: inherit;
+        font-family: var.$font-body;
+    }
+}
+
+.badge {
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 .6rem;
+    text-transform: capitalize;
+    box-shadow: var.$box-shadow-100;
+
+    &--new { color: var.$color-info;}
+    &--best,
+    &--sale,
+    &--limited { color: var.$color-danger;}
+    &--discount {
+        background-color: var.$color-danger;
+        color: #fff;
+    }
+}
+
+.bg {
+    &--dark {
+        background-color: var.$color-primary;
+        color: #fff;
+    }
+}
+
+.link {
+    font-family: var.$font-heading;
+    font-weight: 600;
+    line-height: 1;
+    color: inherit;
+    text-transform: capitalize;
+    letter-spacing: 0.01em;
+
+    &--sub { font-weight: 400; }
+    &--nav {
+        transition: color .15s ease;
+        &:hover { color: var.$color-grey; }
+    }
+}

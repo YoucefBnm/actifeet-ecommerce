@@ -1,0 +1,57 @@
+@use './var';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: .625em;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+body {
+    box-sizing: inherit;
+    font-family: var.$font-body;
+    font-size: 1.6rem;
+    line-height: 1.55;
+    font-weight: 400;
+    color: #000;
+    font-variant-numeric: lining-nums;
+    letter-spacing: normal;
+    text-transform: initial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    // overflow: hidden;
+}
+
+::selection {
+    background-color: var.$color-secondary;
+    color: var.$color-primary;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    background: #fff;
+    width: 1rem;
+    // for shop page
+    // width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var.$color-grey-light;
+    border-radius: 20px;
+}
