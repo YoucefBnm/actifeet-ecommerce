@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600;800&family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .px-default {
+        @apply px-12 md:px-9 sm:px-6
+    }
+}
+body {
+    @apply font-body font-normal leading-relaxed text-base;
+}
+
+.heading {
+    @apply font-heading uppercase leading-tight font-extrabold 
+}
+.heading-xl {
+    @apply text-7xl
+}
+.heading-sm {
+    @apply text-xl font-bold
+}
+
+.link {
+    @apply capitalize font-heading leading-none font-semibold
+}
+
+.link-sub {
+    @apply text-sm 
+}
+
