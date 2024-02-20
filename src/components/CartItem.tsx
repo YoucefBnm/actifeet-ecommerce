@@ -61,14 +61,14 @@ const CartItem = ({cartItem}:CartItemType) => {
     <>
       <div className="flex py-3 px-2 flex-col gap-4 relative w-full">
         <div className="flex justify-between gap-x-4 w-full">
-          <Link title="visit product page" to={cartItem.link} className="relative py-4 px-2 flex items-center overflow-hidden justify-center w-32 aspect-square rounded-md">
+          <Link title="visit product page" to={`/${cartItem.link}`} className="relative py-4 px-2 flex items-center overflow-hidden justify-center w-32 aspect-square rounded-md">
             <img className=" align-middle object-contain max-w-full max-h-full" src={cartItem.mainImage} alt={cartItem.name} />
             <div className="absolute inset-0 bg-neutral-950 opacity-5 pointer-events-none" />
           </Link>
 
           <div className="flex-1 flex-items-start flex-col gap-2">
             <div className="flex self-stretch justify-between gap-x-4 items-center">
-              <h4 className="font-semibold text-xl capitalize">{cartItem.name}</h4>
+              <h4 className="font-semibold  capitalize">{cartItem.name}</h4>
               <button
                 role="button"
                 aria-label="clear item from cart"
