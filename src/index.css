@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .pl-default {
+        @apply pl-6 md:pl-9 xl:pl-9
+    }
+    .pr-default {
+        @apply pr-6 md:pr-9 xl:pr-9
+    }
+    .px-default {
+        @apply px-6 md:px-9 xl:px-9
+    }
+}
+
+body {
+    @apply font-body font-normal leading-normal text-base
+}
+
+.group-gender,
+.group-category,
+.group-brand,
+.group-badge,
+.group-colors {
+    @apply w-28 py-1.5
+}
+.group-sizes {
+    @apply w-[42px] h-[42px]
+}
+.group-colors {
+    @apply items-center justify-start gap-x-2 py-0.5 px-0 
+}
+
+.input-colors {
+    @apply relative w-5 h-5 border-none rounded-full border border-neutral-300
+}
