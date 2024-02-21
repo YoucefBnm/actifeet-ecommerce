@@ -1,6 +1,6 @@
-import { SHOP_COLLECTION_TYPES } from "./shopCollection.types";
+import { UnknownAction } from "redux";
 import { ShopCollectionStateType } from "./types";
-
+import { fetchFailed, fetchProductsStart, fetchProductsSuccess, loadMoreProductsSuccess, loadMoreStart } from "./shopCollection.action";
 
 const SHOP_COLLECTION_INITIAL_STATE:ShopCollectionStateType = {
     products: [],
@@ -11,45 +11,45 @@ const SHOP_COLLECTION_INITIAL_STATE:ShopCollectionStateType = {
     error: null
 }
 
-export const shopCollectionReducer = (state=SHOP_COLLECTION_INITIAL_STATE, {type, payload}) => {
+export const shopCollectionReducer = (state=SHOP_COLLECTION_INITIAL_STATE, action: UnknownAction) => {
 
-    switch(type) {
-        case SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_START:
-        case SHOP_COLLECTION_TYPES.LOAD_MORE_PRODUCTS_START:
-            return {
-                ...state,
-                isFetching: true,
-                error: null 
-            }
-        
-        case SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_SUCCESS:
-            return {
-                ...state,
-                isFetching: false,
-                error: null,
-                products: payload.products,
-                lastVisible: payload.lastVisibleItem,
-                count: payload.count
-            }
-        
-        case SHOP_COLLECTION_TYPES.LOAD_MORE_PRODUCTS_SUCCESS:
-            return {
-                ...state,
-                isFetching: false,
-                error: null,
-                products: [...state.products, ...payload.products],
-                lastVisible: payload.lastVisibleItem,
-                count: payload.count
-            }
-        
-        case SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_FAILED:
-            return {
-                ...state,
-                isFetching: false,
-                error: payload
-            }
-        
-        default:
-            return state
+    if(
+        fetchProductsStart.match(action)
+        || loadMoreStart.match(action)
+    ) {
+        return {
+            ...state,
+            isFetching: true,
+            error: null 
+        }
     }
+    if(fetchProductsSuccess.match(action)) {
+        return {
+            ...state,
+            isFetching: false,
+            error: null,
+            products: action.payload.response.products,
+            lastVisible: action.payload.response.lastVisibleItem,
+            count: action.payload.response.count
+        }
+    }
+    if(loadMoreProductsSuccess.match(action)) {
+        return {
+            ...state,
+            isFetching: false,
+            error: null, 
+            products: [...state.products, ...action.payload.response.products],
+            lastVisible: action.payload.response.lastVisibleItem,
+            count: action.payload.response.count
+        }
+    }
+
+    if(fetchFailed.match(action)) {
+        return {
+            ...state,
+            error: action.payload.message
+        }
+    }
+
+    return state
 }

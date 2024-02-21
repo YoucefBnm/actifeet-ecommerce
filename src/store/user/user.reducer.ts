@@ -1,53 +1,55 @@
-import { USER_ACTION_TYPES } from "./user.types";
+import { UserData } from "@/firebase/user/user";
+import { UnknownAction } from "redux";
+import { authFailed, emailSignInStart, googleSignInStart, signInSuccess, signOutStart, signOutSuccess, signUpSuccess } from "./user.action";
 
-const INITIAL_STATE = {
+export type UserState = {
+  readonly currentUser: UserData | null;
+  readonly loading: boolean
+  readonly error: Error | null 
+}
+
+const INITIAL_STATE: UserState = {
   currentUser: null,
   loading: false,
-  isChecking: false,
   error: null,
 }
 
-export const userReducer = (state = INITIAL_STATE, {type, payload}) => {
-
-  switch(type) {
-    case USER_ACTION_TYPES.EMAIL_SIGN_IN_START:
-    case USER_ACTION_TYPES.SIGN_UP_START:
-    case USER_ACTION_TYPES.GOOGLE_SIGN_IN_START:
-    case USER_ACTION_TYPES.SIGN_OUT_START:
-      return {
-        ...state,
-        loading: true,
-        error: null 
-      }
-    case USER_ACTION_TYPES.SIGN_IN_SUCCESS:
-      return {
-        ...state,
-        loading: false,
-        isChecking: false,
-        currentUser: payload,
-        error: null,
-      }
-    case USER_ACTION_TYPES.CHECK_USER_SESSION:
-      return {
-        ...state,
-        isChecking: true
-      }
-    case USER_ACTION_TYPES.SIGN_OUT_SUCCESS:
-      return {
-        ...state,
-        loading: false,
-        currentUser: null,
-        isChecking: false 
-      }
-
-    case USER_ACTION_TYPES.AUTH_FAILED:
-      return {
-        ...state,
-        loading: false,
-        isChecking: false, 
-        error: payload
-      }
-    default:
-      return state
+export const userReducer = (state=INITIAL_STATE, action: UnknownAction) => {
+  if(
+    emailSignInStart.match(action) 
+    || signUpSuccess.match(action) 
+    || googleSignInStart.match(action) 
+    || signOutStart.match(action)) {
+    return {
+      ...state,
+      loading: true,
+      error: null 
+    }
   }
+
+  if(signInSuccess.match(action)) {
+    return {
+      ...state,
+      loading: false,
+      currentUser: action.payload,
+      error: null 
+    }
+  }
+  if(signOutSuccess.match(action)) {
+    return {
+      ...state,
+      loading: false,
+      currentUser: null
+    }
+  }
+  if(authFailed.match(action)) {
+    return {
+      ...state,
+      loading: false,
+      currentUser: null,
+      error: action.payload.message
+    }
+  }
+
+  return state
 }

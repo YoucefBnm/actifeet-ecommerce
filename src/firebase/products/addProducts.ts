@@ -4,7 +4,7 @@ import { db } from "../controllers";
 import { collectionRef } from "./products.controllers";
 
 
-export const addProducts = async(productsToAdd:ProductProps[]) => {
+export const addProducts = async (productsToAdd:ProductProps[]): Promise<void> => {
 
     const batch = writeBatch(db)
 

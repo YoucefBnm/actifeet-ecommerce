@@ -4,12 +4,12 @@ import { toast } from "sonner";
 import { USER_ACTION_TYPES } from "./user.types";
 import { authFailed, resetPasswordSuccess, signInSuccess, signOutSuccess, signUpSuccess } from "./user.action";
 
-export function* getSnapshotFromUserAuth(userAuth, additionalDetails) {
+export function* getSnapshotFromUserAuth(userAuth, additionalInfo) {
   try {
     const userSnapshot = yield call(
       createUserDocumentFromAuth,
       userAuth,
-      additionalDetails
+      additionalInfo
     );
     
     yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
@@ -109,8 +109,8 @@ function* resetPasswordAsync ({payload: email}) {
   }
 } 
 
-export function* signInAfterSignUp({ payload: { user, additionalDetails } }) {
-  yield call(getSnapshotFromUserAuth, user, additionalDetails);
+export function* signInAfterSignUp({ payload: { user, additionalInfo } }) {
+  yield call(getSnapshotFromUserAuth, user, additionalInfo);
   
 
 }

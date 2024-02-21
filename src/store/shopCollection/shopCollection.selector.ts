@@ -1,7 +1,8 @@
 import { createSelector } from "reselect"
+import { ShopCollectionStateType } from "./types"
 
 
-const selectShopCollectionReducer = (state) => state.shopCollection
+const selectShopCollectionReducer = (state: { shopCollection: ShopCollectionStateType }):ShopCollectionStateType => state.shopCollection
 
 export const selectShopCollectionProducts = createSelector(
     [selectShopCollectionReducer],

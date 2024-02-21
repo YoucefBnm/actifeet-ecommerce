@@ -1,7 +1,19 @@
 import { NextOrObserver, User, UserCredential, createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signInWithRedirect, signOut } from "firebase/auth";
 import { auth, db, googleProvider } from "../controllers";
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { QueryDocumentSnapshot, doc, getDoc, setDoc } from "firebase/firestore";
 import { toast } from "sonner";
+
+export type AdditionalInfo = {
+  displayName?: string;
+  photoURL?: string
+}
+
+export type UserData = {
+  createdAt: Date;
+  displayName: string;
+  email: string;
+  photoURL?: string
+}
 
 export const createAuthUserWithEmailAndPassword = async (email:string,password:string) => {
   if(!email || !password) return 
@@ -15,8 +27,8 @@ export const resetPassword = (email:string) => {
   
 export const createUserDocumentFromAuth = async (
   userAuth:User,
-  additionalInfo = {}
-) => {
+  additionalInfo = {} as AdditionalInfo
+): Promise<void | QueryDocumentSnapshot<UserData>> => {
   if(!userAuth) return
 
   const userDocRef = doc(db, 'users', userAuth.uid)
@@ -36,11 +48,11 @@ export const createUserDocumentFromAuth = async (
         ...additionalInfo
       })
     } catch (error) {
-      toast.error(`createUserDocFromAuth: ${error.message}`)
+      toast.error(`createUserDocFromAuth: ${error}`)
     }
   }
 
-  return userSnapshot
+  return userSnapshot as QueryDocumentSnapshot<UserData>
 }
 
 export const signInAuthUserWithEmailAndPassword = async(email:string, password:string):Promise<UserCredential | void> => {
@@ -54,10 +66,10 @@ export const signInAuthUserWithEmailAndPassword = async(email:string, password:s
 }
 export const signOutUser = async () => await signOut(auth);
 
-const onAuthStateChangedListener = (callback:NextOrObserver<User>) =>
+export const onAuthStateChangedListener = (callback:NextOrObserver<User>) =>
   onAuthStateChanged(auth, callback)
 
-export const getCurrentUser = () => {
+export const getCurrentUser = ():Promise<User | null> => {
   return new Promise((resolve, reject) => {
     const unsubscribe = onAuthStateChanged(
       auth,

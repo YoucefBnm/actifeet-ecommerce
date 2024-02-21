@@ -9,10 +9,10 @@ export type fetchSuccess = {
 }
 
 export interface ShopCollectionStateType {
-    products: ProductProps[];
-    lastVisible: undefined | DocumentSnapshot;
-    count: null | number;
-    selectedSortOption: sortOption;
-    isFetching: boolean;
-    error: null | string
+    readonly products: ProductProps[];
+    readonly lastVisible: undefined | DocumentSnapshot;
+    readonly count: null | number;
+    readonly selectedSortOption: sortOption;
+    readonly isFetching: boolean;
+    readonly error: null | string
 }

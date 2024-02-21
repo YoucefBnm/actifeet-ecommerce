@@ -1,44 +1,54 @@
-import { CART_ACTION_TYPES } from "./cart.types";
-import { CartInitialStateType } from "./types";
+import { UnknownAction } from "redux";
+import { CartItemProps } from "./cart.types";
+import { addCartItemStart, addCartItemSuccess, clearCartItemStart, clearCartItemSuccess, removeCartItemStart, removeCartItemSuccess, setCartItemsFailed, setCartItemsStart, setCartItemsSuccess } from "./cart.action";
 
+export type CartState = {
+    readonly cartItems: CartItemProps[];
+    readonly loading: boolean;
+    readonly error: Error | null
+}
 
-const CART_INITITAL_STATE:CartInitialStateType = {
+const CART_INITITAL_STATE:CartState = {
     cartItems: [],
     loading: false,
     error: null 
 }
 
-export const cartReducer = (state=CART_INITITAL_STATE, { type, payload }:ReducerAction) => {
+export const cartReducer = (state=CART_INITITAL_STATE, action: UnknownAction) => {
 
-    switch(type) {
-        case CART_ACTION_TYPES.SET_CART_ITEMS_START:
-        case CART_ACTION_TYPES.ADD_CART_ITEM_START:
-        case CART_ACTION_TYPES.REMOVE_CART_ITEM_START:
-        case CART_ACTION_TYPES.CLEAR_CART_ITEM_START:
-            return {
-                ...state,
-                loading: true,
-                error: null 
-            }
-
-        case CART_ACTION_TYPES.SET_CART_ITEMS_SUCCESS:
-        case CART_ACTION_TYPES.ADD_CART_ITEM_SUCCESS:
-        case CART_ACTION_TYPES.REMOVE_CART_ITEM_SUCCESS:
-        case CART_ACTION_TYPES.CLEAR_CART_ITEM_SUCCESS:
-            return {
-                cartItems: payload,
-                loading: false,
-                error: null 
-            }
-        
-        case CART_ACTION_TYPES.SET_CART_ITEMS_FAILED:
-            return {
-                ...state,
-                loading: false,
-                error: payload.error.message
-            }
-        
-        default:
-            return state
+    if(
+        setCartItemsStart.match(action)
+        || addCartItemStart.match(action)
+        || removeCartItemStart.match(action)
+        || clearCartItemStart.match(action)
+    ) {
+        return {
+            ...state,
+            loading: true,
+            error: null 
+        }
     }
+
+    if(
+        setCartItemsSuccess.match(action) 
+        || addCartItemSuccess.match(action)
+        || removeCartItemSuccess.match(action)
+        || clearCartItemSuccess.match(action)
+    ) {
+        return {
+            ...state,
+            cartItems: action.payload,
+            loading: false,
+            error: null 
+        }
+    }
+
+    if(setCartItemsFailed.match(action)) {
+        return {
+            ...state,
+            loading: false,
+            error: action.payload.message
+        }
+    }
+    return state
 }

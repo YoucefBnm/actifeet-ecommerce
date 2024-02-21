@@ -1,10 +1,27 @@
-import { QueryFieldFilterConstraint, QueryFilterConstraint, and, doc, getCountFromServer, getDoc, getDocs, limit, or, query, startAfter } from "firebase/firestore";
-import { fetchOptionsProps, filtersType } from "../types";
+import { DocumentData, QueryFieldFilterConstraint, QueryFilterConstraint, and, doc, getCountFromServer, getDoc, getDocs, limit, or, query, startAfter } from "firebase/firestore";
+import { SortOptionsTypes, filtersType } from "../types";
 import { collectionRef, filterQueries, sortOptions } from "./products.controllers";
 import { ProductProps } from "@/components/types";
+import { Params } from "react-router-dom";
 
-export const fetchProducts = async (options:fetchOptionsProps) => {
-    const { params, sortOption, limitNumber, filters, lastVisible } = options
+export type fetchSuccessResponse = {
+    products: ProductProps[];
+    count: number;
+    lastVisibleItem: DocumentData
+}
+
+type FetchOptions = {
+    params:Readonly<Params<string>>, 
+    sortOption:keyof SortOptionsTypes, 
+    limitNumber:number, 
+    filters:filtersType, 
+    lastVisible:DocumentData|undefined
+}
+export const fetchProducts = async (options: FetchOptions):Promise<fetchSuccessResponse> => {
+
+    const {params, sortOption, limitNumber, filters, lastVisible} = options
+    
+    console.log(params, sortOption, limitNumber, filters, lastVisible)
 
     const sortQuery = sortOption ? sortOptions[sortOption] : sortOptions['suggested']
     const limitQuery = limit(limitNumber)
@@ -62,7 +79,7 @@ export const fetchProducts = async (options:fetchOptionsProps) => {
     }
 }
 
-export const fetchProductItem = async (productId:string) => {
+export const fetchProductItem = async (productId:string):Promise<ProductProps | void> => {
 
     const productDoc = doc(collectionRef, productId)
 

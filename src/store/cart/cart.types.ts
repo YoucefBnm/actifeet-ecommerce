@@ -12,5 +12,18 @@ export enum CART_ACTION_TYPES {
     CLEAR_CART_ITEM_SUCCESS = 'cart/CLEAR_CART_ITEM_SUCCESS',
 
     SET_CART_ITEMS_FAILED = 'cart/SET_CART_ITEMS_FAILED'
+}
 
+export type CartItemProps = {
+    id: string;
+    gender: string;
+    category: string,
+    brand: string;
+    name: string;
+    price: number | string;
+    size: number;
+    color: string;
+    mainImage: string;
+    quantity: number,
+    link: string
 }

@@ -19,8 +19,8 @@ function* addCartItemAsync ({payload: {cartItems, itemToAdd, selectedColor, sele
 
         yield put(setCartItemsSuccess(newCartItems))
         toast.success('Item Added to cart.')
-    } catch(error) {
-        yield put(setCartItemsFailed({error}))
+    } catch(error:Error) {
+        yield put(setCartItemsFailed(error))
         toast.error(error.message)
     }
 }
