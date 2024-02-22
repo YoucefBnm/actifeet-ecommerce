@@ -27,3 +27,4 @@ export type CartItemProps = {
     quantity: number,
     link: string
 }
+

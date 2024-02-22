@@ -14,6 +14,8 @@ const Auth = () => {
 
   const authState = location.pathname.split('/').at(-1)
 
+  
+  
   return (
     <main className="px-default py-8">
       <Tabs value={authState} className=" w-4/5 md:w-2/5 mx-auto">

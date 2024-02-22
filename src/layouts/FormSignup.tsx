@@ -23,7 +23,15 @@ const FormSignup = () => {
         try {
             dispatch(signUpStart(email, password, displayName))
         } catch(error) {
-            toast.error(error.message)
+            
+            if(error.code==='auth/email-already-in-use') {
+                toast.error('email already in use')
+              } 
+              if(error.code==='auth/weak-password') {
+                toast.error('weak password, password should be at least 6 characters.')
+              } else {
+                toast.error(error.message)
+              }
         }
     }
 

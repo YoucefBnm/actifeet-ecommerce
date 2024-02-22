@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 
+/src/assets/shop_data.ts
 .env
 # Editor directories and files
 .vscode/*

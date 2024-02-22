@@ -1,45 +1,58 @@
 import { fetchProducts } from "@/firebase/products/fetchProducts";
-import { all, call, put, takeLatest } from "redux-saga/effects";
+import { call, all, takeLatest, put } from "typed-redux-saga";
 import { fetchFailed, fetchProductsSuccess, loadMoreProductsSuccess } from "./shopCollection.action";
 import { SHOP_COLLECTION_TYPES } from "./shopCollection.types";
+import { SortOptionsTypes, filtersType } from "@/firebase/types";
+import { Params } from "react-router-dom";
+import { DocumentData } from "firebase/firestore";
+import { TakeableChannel } from "redux-saga";
 
+type fetchAsyncPaylod = {
+    payload: {
+        params:Readonly<Params<string>>, 
+        sortOption: keyof SortOptionsTypes,
+        limitNumber:number, 
+        filters: filtersType,
+        lastVisible: DocumentData | undefined
+    }
+} 
 
-function* fetchShopProductsAsync ({payload: {params, sortOption, limitNumber, filters, lastVisible}}) {
+function* fetchShopProductsAsync ({payload: {params, sortOption, limitNumber, filters, lastVisible}}:fetchAsyncPaylod) {
 
     try {
-        const fetchShopProducts = yield call(fetchProducts, { params, sortOption, limitNumber, filters, lastVisible })
-        yield put(fetchProductsSuccess(fetchShopProducts))
+        const fetchShopProducts = yield* call(fetchProducts, { params, sortOption, limitNumber, filters, lastVisible })
+        yield* put(fetchProductsSuccess(fetchShopProducts))
     } catch(error) {
-        yield put(fetchFailed(error))
+        yield* put(fetchFailed(error as Error))
     }
 }
 
-function* loadProductsAsync ({payload: {params, sortOption, limitNumber, filters, lastVisible}}) {
+function* loadProductsAsync ({payload: {params, sortOption, limitNumber, filters, lastVisible}}:fetchAsyncPaylod) {
 
     try {
-        const loadProducts = yield call(fetchProducts, { params, sortOption, limitNumber, filters, lastVisible })
-        yield put(loadMoreProductsSuccess(loadProducts))
+        const loadProducts = yield* call(fetchProducts, { params, sortOption, limitNumber, filters, lastVisible })
+        yield* put(loadMoreProductsSuccess(loadProducts))
     } catch(error) {
-        yield put(fetchFailed(error))
+        yield* put(fetchFailed(error as Error))
     }
 }
 
 function* onFetchProducts() {
-    yield takeLatest(
-        SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_START,
+    yield* takeLatest(
+        SHOP_COLLECTION_TYPES.FETCH_PRODUCTS_START as unknown as TakeableChannel<unknown>,
         fetchShopProductsAsync
     )
 }
 
 function* onLoadMoreProducts() {
-    yield takeLatest(
-        SHOP_COLLECTION_TYPES.LOAD_MORE_PRODUCTS_START,
+    yield* takeLatest(
+        SHOP_COLLECTION_TYPES.LOAD_MORE_PRODUCTS_START as unknown as TakeableChannel<unknown>,
         loadProductsAsync
     )
 }
 
 export function* shopCollectionSagas () {
-    yield all([
+    yield* all([
         call(onFetchProducts),
         call(onLoadMoreProducts)
     ])

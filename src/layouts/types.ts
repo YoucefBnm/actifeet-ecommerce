@@ -52,11 +52,7 @@ export type FormProps = {
     children: ReactNode
 }
 
-export type ProductsCarouselProps = {
-    slides: ProductProps[];
-    title: string,
-    link:string
-}
+
 
 export type ProductPageDetailsProps = {
     product: ProductProps,

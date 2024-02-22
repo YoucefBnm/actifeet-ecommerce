@@ -1,5 +1,6 @@
-import { CartItemProps } from "@/store/cart/types";
+import { CartItemProps } from "@/store/cart/cart.types";
 import { ReactNode } from "react";
+import { Params } from "react-router-dom";
 
 export type StaggerContainerProps = {
     direction?: number,
@@ -74,3 +75,9 @@ export type CartItemGroupProps = {
 export type CartItemType = {
     cartItem: CartItemProps
   }
+
+export type ProductsCarouselProps = {
+    title: string,
+    link:string,
+    params: Readonly<Params<string>>
+}

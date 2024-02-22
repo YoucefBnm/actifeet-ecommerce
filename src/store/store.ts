@@ -13,6 +13,7 @@ declare global {
     __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose
   }
 }
+
 const persistConfig = {
   key: 'root',
   storage,

@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger
 import { selectCartCount, selectCartItems, selectCartTotal, selectLoading } from '@/store/cart/cart.selector'
 import { CartItemProps } from '@/store/cart/types'
 import { selectCount } from '@/store/shopCollection/shopCollection.selector'
+import { selectCurrentUser } from '@/store/user/user.selector'
 import { formatPrice } from '@/utils/price/price.utils'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -54,6 +55,7 @@ const CartContainer = () => {
 
 
 const CartEmpty = () => {
+    const currentUser = useSelector(selectCurrentUser)
 
     return (
         <SheetContent className=' flex flex-col gap-4'>
@@ -61,15 +63,15 @@ const CartEmpty = () => {
                 <SheetTitle className='flex items-center gap-1 font-semibold text-neutral-700 text-xl'>
                     Your Cart Is empty.
                 </SheetTitle>
-                <div className="text-sm">Log in to see any items you may have left in your cart, or start shopping.</div>
+                <div className="text-sm">Your cart is empty, explore our shop collections to find your shoes.</div>
             </SheetHeader>
             
             <Separator />
 
             <div className="flex gap-2">
-                <Button asChild>
+                {!currentUser && <Button asChild>
                     <Link to='/auth/login'>Login</Link>
-                </Button>
+                </Button>}
                 <Button asChild>
                     <Link to='/shop/men'>Shop Men</Link>
                 </Button>

@@ -1,6 +1,6 @@
 import { ProductProps } from "@/components/types"
 import { setPrice } from "../price/price.utils"
-import { CartItemProps } from "@/store/cart/types"
+import { CartItemProps } from "@/store/cart/cart.types"
 
 type SetCartItemsProps = {
     cartItems:CartItemProps[], 
@@ -73,6 +73,8 @@ export const addCartItem = (payload:CartItemTarget) => {
                 : cartItem
             ))
         )
+    } else {
+        return Promise.resolve(cartItems)
     }
 }
 export const removeItemFromCart = (payload:CartItemTarget) => {

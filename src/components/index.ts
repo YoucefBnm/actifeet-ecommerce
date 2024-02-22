@@ -11,6 +11,7 @@ import StaggerContainer from "./StaggerContainer";
 import Spinner from "./Spinner";
 import AuthForm from "./AuthForm";
 import SortSelect from "./SortSelect";
+import ProductsCarousel from "./ProductsCarousel";
 
 export {
     AnimatedHeading,
@@ -26,4 +27,5 @@ export {
     Spinner,
     AuthForm,
     SortSelect,
+    ProductsCarousel
 }

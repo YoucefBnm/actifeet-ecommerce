@@ -1,66 +1,62 @@
 import { promiseInterval } from "@/utils/promiseInterval/promiseIntervale.utils";
-import { AddCartItemProps, CartItemProps, CartItemTargetProps } from "./types";
-import { all, call, put, takeLatest } from "redux-saga/effects";
+import { call, all, takeLatest, put } from "typed-redux-saga";
 import { addCartItem, addItemToCart, clearItemFromCart, removeItemFromCart } from "@/utils/cart/cart.utils";
 import { toast } from "sonner";
-import { addCartItemSuccess, clearCartItemSuccess, removeCartItemSuccess, setCartItemsFailed, setCartItemsSuccess } from "./cart.action";
-import { CART_ACTION_TYPES } from "./cart.types";
+import { AddCartItemStart, ClearCartItemStart, RemoveCartItemStart, SetCartItemsStart, addCartItemSuccess, clearCartItemSuccess, removeCartItemSuccess, setCartItemsFailed, setCartItemsSuccess } from "./cart.action";
+import { CART_ACTION_TYPES, CartItemProps } from "./cart.types";
 
-
-function* addCartItemAsync ({payload: {cartItems, itemToAdd, selectedColor, selectedSize }}:AddCartItemProps) {
-
+function* addCartItemAsync ({payload: {cartItems, itemToAdd, selectedColor, selectedSize }}:SetCartItemsStart) {
     try {
-
         yield promiseInterval()
-
-        const newCartItems:CartItemProps[] = yield call(addItemToCart, {
+        const newCartItems = yield* call(addItemToCart, {
             cartItems, itemToAdd, selectedColor, selectedSize
         })
 
         yield put(setCartItemsSuccess(newCartItems))
         toast.success('Item Added to cart.')
-    } catch(error:Error) {
-        yield put(setCartItemsFailed(error))
-        toast.error(error.message)
+    } catch(error) {
+        yield put(setCartItemsFailed(error as Error))
+        toast.error('Select size to add item to cart.')
     }
 }
 
-function* increaseItemQtyAsync ({payload: {cartItems, itemTarget}}:CartItemTargetProps) {
+function* increaseItemQtyAsync ({payload: {cartItems, itemTarget}}:AddCartItemStart) {
 
     try {
         yield promiseInterval()
-        const newCartItems = yield call(addCartItem, {cartItems, itemTarget})
-        yield put(addCartItemSuccess(newCartItems))
+        const newCartItems = yield* call(addCartItem, {cartItems, itemTarget})
+
+        yield put(addCartItemSuccess(newCartItems as CartItemProps[]))
         toast.success('Item added to cart.')
     } catch(error) {
-        yield put(setCartItemsFailed({error}))
-        toast.error(error.message)
+        yield put(setCartItemsFailed(error as Error))
+        toast.error('Could not add item to cart')
     }
 }
 
-function* removeCartItemAsync ({payload: {cartItems, itemTarget}}:CartItemTargetProps) {
+function* removeCartItemAsync ({payload: {cartItems, itemTarget}}:RemoveCartItemStart) {
 
     try {
         yield promiseInterval()
-        const newCartItems = yield call(removeItemFromCart, {cartItems, itemTarget})
-        yield put(removeCartItemSuccess(newCartItems))
+        const newCartItems = yield* call(removeItemFromCart, {cartItems, itemTarget})
+        yield put(removeCartItemSuccess(newCartItems as CartItemProps[]))
         toast.info('Item removed from cart.')
     } catch(error) {
-        yield put(setCartItemsFailed({error}))
-        toast.error(error.message)
+        yield put(setCartItemsFailed(error as Error))
+        toast.error('Could not remove item from cart')
     }
 }
 
-function* clearCartItemAsync ({payload: {cartItems, itemTarget}}:CartItemTargetProps) {
+function* clearCartItemAsync ({payload: {cartItems, itemTarget}}:ClearCartItemStart) {
 
     try {
         yield promiseInterval()
-        const newCartItems = yield call(clearItemFromCart, { cartItems, itemTarget})
-        yield put(clearCartItemSuccess(newCartItems))
+        const newCartItems = yield* call(clearItemFromCart, { cartItems, itemTarget})
+        yield put(clearCartItemSuccess(newCartItems as CartItemProps[]))
         toast.info('Item Cleared from cart.')
     } catch(error) {
-        yield put(setCartItemsFailed({error}))
-        toast.error(error.message)
+        yield put(setCartItemsFailed(error as Error))
+        toast.error('Could not clear item from cart')
     }
 }
 

@@ -4,6 +4,7 @@ import { fadeVariants } from "@/libs/motion/motion.variatns"
 import { Button } from "@/libs/shadcn/ui/button"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import { ProductsCarousel } from "@/components"
 
 const Home = () => {
   
@@ -40,6 +41,8 @@ const Home = () => {
           </Button>
         </motion.div>
       </Hero>
+      
+      <ProductsCarousel title="Crowds Favorites" link="/shop/badge/best seller" params={{badge: 'best seller'}} />
 
       <Cta 
         heading={ctaClimbingContent.heading}
@@ -47,6 +50,8 @@ const Home = () => {
         imageUrl={ctaClimbingContent.imageUrl}
         route={ctaClimbingContent.route}
       />
+
+      <ProductsCarousel title="New Arrivals" link="/shop/badge/new" params={{badge: 'new'}} />
 
       <Hero 
         bg="bg-hero-hiking"
@@ -62,7 +67,9 @@ const Home = () => {
           </Button>
         </motion.div>
       </Hero>
-      
+
+      <ProductsCarousel title="Best Deals" link="/shop/badge/sale" params={{badge: 'sale'}} />
+
       <Cta
         heading={ctaCrossTrainingContent.heading}
         paragraph={ctaCrossTrainingContent.paragrpah}

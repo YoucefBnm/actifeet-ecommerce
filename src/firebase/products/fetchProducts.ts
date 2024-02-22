@@ -21,8 +21,6 @@ export const fetchProducts = async (options: FetchOptions):Promise<fetchSuccessR
 
     const {params, sortOption, limitNumber, filters, lastVisible} = options
     
-    console.log(params, sortOption, limitNumber, filters, lastVisible)
-
     const sortQuery = sortOption ? sortOptions[sortOption] : sortOptions['suggested']
     const limitQuery = limit(limitNumber)
 

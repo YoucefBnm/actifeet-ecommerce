@@ -9,7 +9,6 @@ import ShopNav from "./ShopNav";
 import FormLogin from "./FormLogin";
 import FormSignup from "./FormSignup";
 import FormForgotPassword from "./FormForgotPassword";
-import ProductsCarousel from "./ProductsCarousel";
 import ProductPageGallery from "./ProductPageGallery";
 import ProductPagedetails from "./ProductPageDetails";
 import Cart from "./Cart";
@@ -26,8 +25,7 @@ export {
     FormLogin,
     FormSignup,
     FormForgotPassword,
-    ProductsCarousel,
     ProductPageGallery,
     ProductPagedetails,
-    Cart
+    Cart,
 }

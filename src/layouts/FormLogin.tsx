@@ -21,6 +21,15 @@ const FormLogin = () => {
     try {
       dispatch(emailSignInStart(email, password))
     } catch(error) {
+      if(error.code==='auth/user-not-found') {
+        toast.error('user not found')
+      }
+      if(error.code==='auth/wrong-password') {
+        toast.error('Wrong password')
+      }
+      else {
+        toast.error('Auth Failed')
+      }
       toast.error(error.message)
     }
   }

@@ -3,7 +3,7 @@ import { CART_ACTION_TYPES, CartItemProps } from "./cart.types"
 import { ActionWithPayload, createAction, withMatcher } from "@/utils/reducer/reducer.utils"
 
 export type SetCartItemsStart = ActionWithPayload<CART_ACTION_TYPES.SET_CART_ITEMS_START, {cartItems:CartItemProps[], itemToAdd:ProductProps, selectedColor:number, selectedSize:number|undefined}>
-export type AddCartItemStart = ActionWithPayload<CART_ACTION_TYPES.ADD_CART_ITEM_START, {cartItems:CartItemProps, itemTarget:CartItemProps}>
+export type AddCartItemStart = ActionWithPayload<CART_ACTION_TYPES.ADD_CART_ITEM_START, {cartItems:CartItemProps[], itemTarget:CartItemProps}>
 export type RemoveCartItemStart = ActionWithPayload<CART_ACTION_TYPES.REMOVE_CART_ITEM_START, {cartItems:CartItemProps[], itemTarget:CartItemProps}>
 export type ClearCartItemStart = ActionWithPayload<CART_ACTION_TYPES.CLEAR_CART_ITEM_START, {cartItems:CartItemProps[], itemTarget:CartItemProps}>
 export type SetCartItemsSuccess = ActionWithPayload<CART_ACTION_TYPES.SET_CART_ITEMS_SUCCESS, CartItemProps[]>
@@ -14,7 +14,7 @@ export type SetCartItemsFailed = ActionWithPayload<CART_ACTION_TYPES.SET_CART_IT
 
 export const setCartItemsStart = withMatcher((cartItems:CartItemProps[], itemToAdd:ProductProps, selectedColor:number, selectedSize:number|undefined):SetCartItemsStart => 
     createAction(CART_ACTION_TYPES.SET_CART_ITEMS_START, {cartItems, itemToAdd, selectedColor, selectedSize}))
-export const addCartItemStart = withMatcher((cartItems:CartItemProps, itemTarget:CartItemProps):AddCartItemStart => 
+export const addCartItemStart = withMatcher((cartItems:CartItemProps[], itemTarget:CartItemProps):AddCartItemStart => 
     createAction(CART_ACTION_TYPES.ADD_CART_ITEM_START, {cartItems, itemTarget}))
 export const removeCartItemStart = withMatcher((cartItems:CartItemProps[], itemTarget:CartItemProps):RemoveCartItemStart => 
     createAction(CART_ACTION_TYPES.REMOVE_CART_ITEM_START, {cartItems, itemTarget}))
